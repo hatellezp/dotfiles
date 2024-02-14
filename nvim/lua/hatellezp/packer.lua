@@ -84,6 +84,8 @@ return require('packer').startup(function(use)
     as = "dracula"
   })
 
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   use({
       "iamcco/markdown-preview.nvim",
       as = "mkdp",

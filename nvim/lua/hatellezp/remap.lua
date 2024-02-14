@@ -58,3 +58,4 @@ vim.keymap.set("n", "<leader>sh", ":split <CR>")
 
 vim.keymap.set("n", "<leader>ff", ":Format <CR>")
 vim.keymap.set("n", "<leader>fF", ":FormatWrite <CR>")
+
