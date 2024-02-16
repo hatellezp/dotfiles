@@ -28,16 +28,18 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = { "100", "120" }
 
 vim.opt.listchars = {
-    trail = "·",
-    tab = ">-",
-    lead = "·",
+    trail = ".",
+    lead = ".",
+    tab = "·\\",
+    extends = "▶",
+    precedes = "◀",
+    nbsp = "␣",
+    eol = "⤶"
 }
 vim.opt.list = true
-
 
 vim.g.rustfmt_autosave = 1
 vim.g.rustfmt_autosave = 1
 
 -- try to format on save
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
-

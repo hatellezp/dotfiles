@@ -1,2 +1,3 @@
 alias vim="/home/tellez/.local/bin/nvim.appimage"
+alias putop="opam exec -- dune utop"
 

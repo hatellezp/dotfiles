@@ -51,13 +51,12 @@ vim.keymap.set('n', "<leader>cr", ":!cargo fmt; cargo run <CR>")
 vim.keymap.set('n', "<leader>cb", ":!cargo fmt; cargo build <CR>")
 
 -- ocaml run and build
+vim.keymap.set('n', "<leader>ob", ":!opam exec -- dune build <CR>")
 vim.keymap.set('n', "<leader>or", function()
-    vim.cmd(string.format(":!opam exec -- dune exec %s", vim.fn.input("project: ")))
+    vim.cmd(string.format("!opam exec -- dune build && opam exec -- dune exec %s", vim.fn.input("project: ")))
 end)
--- vim.keymap.set('n', "<leader>ou", ":FloatermNew --name=ocamlutop --height=0.8 --width=0.7 --autoclose=0 --cmd=\"opam exec -- dune utop\" <CR> ")
-vim.keymap.set('n', "<leader>ob", function()
-    vim.cmd("!opam exec -- dune build")
-end)
+vim.keymap.set('n', '<leader>ou', ":FloatermNew --name=ocamlutop --height=0.8 --width=0.7 --autoclose=0 opam exec -- dune utop <CR>")
+vim.keymap.set('n', "<leader>ot", ":FloatermToggle ocamlutop<CR>")
 
 -- split
 vim.keymap.set("n", "<leader>sv", ":vsplit <CR>")
