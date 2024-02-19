@@ -30,11 +30,11 @@ vim.opt.colorcolumn = { "100", "120" }
 vim.opt.listchars = {
     trail = ".",
     lead = ".",
-    tab = "·\\",
+    tab = "·\\⇨",
     extends = "▶",
     precedes = "◀",
     nbsp = "␣",
-    eol = "⤶"
+    eol = "↵"
 }
 vim.opt.list = true
 
