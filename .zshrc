@@ -93,6 +93,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     docker
+    asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -153,3 +154,8 @@ eval "$(zoxide init zsh)"
 
 # opam configuration
 [[ ! -r /home/tellez/.opam/opam-init/init.zsh ]] || source /home/tellez/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+
+# asdf installation
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
