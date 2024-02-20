@@ -103,5 +103,8 @@ return require('packer').startup(function(use)
       setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
       ft = { "markdown" },
   })
+
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- recommended if need floating window support
 end)
 
