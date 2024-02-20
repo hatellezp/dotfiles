@@ -159,3 +159,5 @@ eval "$(zoxide init zsh)"
 # asdf installation
 . "$HOME/.asdf/asdf.sh"
 . "$HOME/.asdf/completions/asdf.bash"
+export MODULAR_HOME="/home/tellez/.modular"
+export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
