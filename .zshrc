@@ -161,3 +161,5 @@ eval "$(zoxide init zsh)"
 . "$HOME/.asdf/completions/asdf.bash"
 export MODULAR_HOME="/home/tellez/.modular"
 export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+
