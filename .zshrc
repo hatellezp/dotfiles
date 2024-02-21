@@ -163,3 +163,4 @@ export MODULAR_HOME="/home/tellez/.modular"
 export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 
+export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so
