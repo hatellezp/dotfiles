@@ -25,6 +25,17 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     group = autocmd_group,
 })
 
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    pattern = { "*.go" },
+    desc = "Auto-format rust files after saving using the rust formatter",
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        vim.cmd(":silent !go fmt " .. fileName)
+    end,
+    group = autocmd_group,
+})
+
+
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[%s/\s\+$//e]],

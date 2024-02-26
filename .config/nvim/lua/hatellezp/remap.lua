@@ -58,6 +58,10 @@ end)
 vim.keymap.set('n', '<leader>ou', ":FloatermNew --name=ocamlutop --height=0.8 --width=0.7 --autoclose=0 opam exec -- dune utop <CR>")
 vim.keymap.set('n', "<leader>ot", ":FloatermToggle ocamlutop<CR>")
 
+-- go run and build
+vim.keymap.set('n', "<leader>gr", ":!go fmt; go run . <CR>")
+vim.keymap.set('n', "<leader>gb", ":!go fmt; go build <CR>")
+
 -- split
 vim.keymap.set("n", "<leader>sv", ":vsplit <CR>")
 vim.keymap.set("n", "<leader>sh", ":split <CR>")
