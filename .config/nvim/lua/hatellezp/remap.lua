@@ -62,6 +62,19 @@ vim.keymap.set('n', "<leader>ot", ":FloatermToggle ocamlutop<CR>")
 vim.keymap.set('n', "<leader>gr", ":!go fmt; go vet .; go run . <CR>")
 vim.keymap.set('n', "<leader>gb", ":!go fmt; go vet .; go build <CR>")
 
+-- zig build, run and test
+vim.keymap.set('n', "<leader>zr", ":!zig build run <CR>")
+vim.keymap.set('n', "<leader>zR", function()
+    vim.cmd(string.format("!zig run %s", vim.api.nvim_buf_get_name(0)))
+end)
+vim.keymap.set('n', "<leader>zt", ":!zig build test <CR>")
+vim.keymap.set('n', "<leader>zT", function()
+    vim.cmd(string.format("!zig test %s", vim.api.nvim_buf_get_name(0)))
+end)
+
+
+
+
 -- split
 vim.keymap.set("n", "<leader>sv", ":vsplit <CR>")
 vim.keymap.set("n", "<leader>sh", ":split <CR>")
