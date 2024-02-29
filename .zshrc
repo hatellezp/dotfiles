@@ -141,3 +141,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=$PATH:/usr/local/go/bin
+export  PATH=$PATH:$HOME/go/bin
+
+export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so
+export PATH=$PATH:$HOME/zig
