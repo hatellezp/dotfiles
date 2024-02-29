@@ -10,24 +10,14 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:"/home/tellez/.local/bin"
-export PATH=$PATH:"/home/tellez/gpt4all/bin"
-
-export GIT_EDITOR="/home/tellez/.local/bin/nvim.appimage"
-
-source "$HOME/.zshrc_alias"
-
-# ===========
-# for key maps
-# setxkbmap eurkey
-setxkbmap fr
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
+#
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -92,11 +82,13 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    docker
-    asdf
+    fast-syntax-highlighting
+    zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
+export PATH=$PATH:/home/horacio/.local/bin
+export PATH=$PATH:/home/horacio/.cargo/bin
 
 # User configuration
 
@@ -124,43 +116,28 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export MODULAR_HOME="/home/tellez/.modular"
-export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/tellez/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/horacio/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/tellez/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/tellez/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/horacio/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/horacio/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/tellez/anaconda3/bin:$PATH"
+        export PATH="/home/horacio/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+eval "$(zoxide init zsh)"
+source ~/.zshrc_alias
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-eval "$(zoxide init zsh)"
-
-# opam configuration
-[[ ! -r /home/tellez/.opam/opam-init/init.zsh ]] || source /home/tellez/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-
-# asdf installation
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
-export MODULAR_HOME="/home/tellez/.modular"
-export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
-
-export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so

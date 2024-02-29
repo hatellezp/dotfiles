@@ -50,6 +50,10 @@ vim.keymap.set('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 vim.keymap.set('n', "<leader>cr", ":!cargo fmt; cargo run <CR>")
 vim.keymap.set('n', "<leader>cb", ":!cargo fmt; cargo build <CR>")
 
+-- go run and build
+vim.keymap.set('n', "<leader>gr", ":!go fmt; go run . <CR>")
+vim.keymap.set('n', "<leader>gb", ":!go fmt; go build <CR>")
+
 -- ocaml run and build
 vim.keymap.set('n', "<leader>ob", ":!opam exec -- dune build <CR>")
 vim.keymap.set('n', "<leader>or", function()
