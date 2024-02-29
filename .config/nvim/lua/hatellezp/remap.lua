@@ -51,6 +51,14 @@ vim.keymap.set('n', "<leader>cr", ":!cargo fmt; cargo run <CR>")
 vim.keymap.set('n', "<leader>cR", ":!cargo fmt; cargo run --release <CR>")
 vim.keymap.set('n', "<leader>cb", ":!cargo fmt; cargo build <CR>")
 vim.keymap.set('n', "<leader>cB", ":!cargo fmt; cargo build --release <CR>")
+vim.keymap.set('n', "<leader>cI", function()
+    vim.cmd(string.format("!cargo install %s", vim.fn.input("crate to install: ")))
+end)
+vim.keymap.set('n', "<leader>cA", function()
+    vim.cmd(string.format("!cargo add %s", vim.fn.input("crate to add: ")))
+end)
+
+
 
 -- ocaml run and build
 vim.keymap.set('n', "<leader>ob", ":!opam exec -- dune build <CR>")
