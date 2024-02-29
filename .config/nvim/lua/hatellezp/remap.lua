@@ -48,7 +48,9 @@ vim.keymap.set('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 
 -- cargo run and build
 vim.keymap.set('n', "<leader>cr", ":!cargo fmt; cargo run <CR>")
+vim.keymap.set('n', "<leader>cR", ":!cargo fmt; cargo run --release <CR>")
 vim.keymap.set('n', "<leader>cb", ":!cargo fmt; cargo build <CR>")
+vim.keymap.set('n', "<leader>cB", ":!cargo fmt; cargo build --release <CR>")
 
 -- ocaml run and build
 vim.keymap.set('n', "<leader>ob", ":!opam exec -- dune build <CR>")
@@ -71,9 +73,6 @@ vim.keymap.set('n', "<leader>zt", ":!zig build test <CR>")
 vim.keymap.set('n', "<leader>zT", function()
     vim.cmd(string.format("!zig test %s", vim.api.nvim_buf_get_name(0)))
 end)
-
-
-
 
 -- split
 vim.keymap.set("n", "<leader>sv", ":vsplit <CR>")
