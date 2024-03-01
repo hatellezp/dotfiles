@@ -21,6 +21,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     callback = function()
         local fileName = vim.api.nvim_buf_get_name(0)
         vim.cmd(":silent !rustfmt " .. fileName)
+        vim.cmd(":silent !cargo fmt")
     end,
     group = autocmd_group,
 })
