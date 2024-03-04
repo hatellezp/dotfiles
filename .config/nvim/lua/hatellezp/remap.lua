@@ -58,6 +58,10 @@ vim.keymap.set('n', "<leader>cA", function()
     vim.cmd(string.format("!cargo add %s", vim.fn.input("crate to add: ")))
 end)
 
+-- python run
+vim.keymap.set('n', "<leader>pR", function()
+    vim.cmd(string.format("!python %s", vim.api.nvim_buf_get_name(0)))
+end)
 
 
 -- ocaml run and build
