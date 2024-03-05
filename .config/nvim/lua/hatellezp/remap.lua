@@ -62,6 +62,11 @@ end)
 vim.keymap.set('n', "<leader>pR", function()
     vim.cmd(string.format("!python %s", vim.api.nvim_buf_get_name(0)))
 end)
+vim.keymap.set('n', "<leader>pI", function()
+    vim.cmd(string.format("!pip install %s", vim.fn.input("package to install: ")))
+end)
+
+
 
 
 -- ocaml run and build
