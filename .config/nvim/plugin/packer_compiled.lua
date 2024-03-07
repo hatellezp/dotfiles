@@ -141,12 +141,20 @@ _G.packer_plugins = {
   },
   ["go.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/home/horacio/.local/share/nvim/site/pack/packer/start/go.nvim",
+=======
+    path = "/home/tellez/.local/share/nvim/site/pack/packer/start/go.nvim",
+>>>>>>> fdcf69dbdfd50aaeec077e86e3e791867c184327
     url = "https://github.com/ray-x/go.nvim"
   },
   ["guihua.lua"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/home/horacio/.local/share/nvim/site/pack/packer/start/guihua.lua",
+=======
+    path = "/home/tellez/.local/share/nvim/site/pack/packer/start/guihua.lua",
+>>>>>>> fdcf69dbdfd50aaeec077e86e3e791867c184327
     url = "https://github.com/ray-x/guihua.lua"
   },
   harpoon = {

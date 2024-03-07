@@ -58,10 +58,18 @@ vim.keymap.set('n', "<leader>cA", function()
     vim.cmd(string.format("!cargo add %s", vim.fn.input("crate to add: ")))
 end)
 
+-- python run
+vim.keymap.set('n', "<leader>pR", function()
+    vim.cmd(string.format("!python %s", vim.api.nvim_buf_get_name(0)))
+end)
+vim.keymap.set('n', "<leader>pI", function()
+    vim.cmd(string.format("!pip install %s", vim.fn.input("package to install: ")))
+end)
+
 -- ocaml run and build
-vim.keymap.set('n', "<leader>ob", ":!opam exec -- dune build <CR>")
+vim.keymap.set('n', "<leader>ob", ":!dune fmt && dune build <CR>")
 vim.keymap.set('n', "<leader>or", function()
-    vim.cmd(string.format("!opam exec -- dune build && opam exec -- dune exec %s", vim.fn.input("project: ")))
+    vim.cmd(string.format("!dune fmt && dune build && dune exec %s", vim.fn.input("project: ")))
 end)
 vim.keymap.set('n', '<leader>ou', ":FloatermNew --name=ocamlutop --height=0.8 --width=0.7 --autoclose=0 opam exec -- dune utop <CR>")
 vim.keymap.set('n', "<leader>ot", ":FloatermToggle ocamlutop<CR>")
