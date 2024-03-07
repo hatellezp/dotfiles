@@ -46,6 +46,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
         local tempFileName = fileName .. "temp"
         vim.cmd(":silent !ocamlformat " .. fileName .. " | tee " .. tempFileName)
         vim.cmd(":silent !cp " .. tempFileName .. " " .. fileName)
+        vim.cmd(":silent !rm " .. tempFileName)
     end,
     group = autocmd_group,
 })
