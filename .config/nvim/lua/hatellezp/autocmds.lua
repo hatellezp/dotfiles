@@ -28,13 +28,29 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     pattern = { "*.go" },
-    desc = "Auto-format rust files after saving using the rust formatter",
+    desc = "Auto-format go files after saving using the go formatter",
     callback = function()
         local fileName = vim.api.nvim_buf_get_name(0)
         vim.cmd(":silent !go fmt " .. fileName)
     end,
     group = autocmd_group,
 })
+
+
+-- stupid ocamlformat can't format inplace
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    pattern = { "*.ml" },
+    desc = "Auto-format ocaml files using ocamlformat",
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        local tempFileName = fileName .. "temp"
+        vim.cmd(":silent !ocamlformat " .. fileName .. " | tee " .. tempFileName)
+        vim.cmd(":silent !cp " .. tempFileName .. " " .. fileName)
+    end,
+    group = autocmd_group,
+})
+
+
 
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
