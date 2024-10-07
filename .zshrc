@@ -166,3 +166,5 @@ export  PATH=$PATH:$HOME/go/bin
 
 export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so
 export PATH=$PATH:$HOME/zig
+
+[ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env

@@ -66,9 +66,6 @@ vim.keymap.set('n', "<leader>pI", function()
     vim.cmd(string.format("!pip install %s", vim.fn.input("package to install: ")))
 end)
 
-
-
-
 -- ocaml run and build
 vim.keymap.set('n', "<leader>ob", ":!dune fmt && dune build <CR>")
 vim.keymap.set('n', "<leader>or", function()
@@ -76,6 +73,9 @@ vim.keymap.set('n', "<leader>or", function()
 end)
 vim.keymap.set('n', '<leader>ou', ":FloatermNew --name=ocamlutop --height=0.8 --width=0.7 --autoclose=0 opam exec -- dune utop <CR>")
 vim.keymap.set('n', "<leader>ot", ":FloatermToggle ocamlutop<CR>")
+vim.keymap.set('n', "<leader>oI", function()
+    vim.cmd(string.format("!opam install %s", vim.fn.input("module to install: ")))
+end)
 
 -- go run and build
 vim.keymap.set('n', "<leader>gr", ":!go fmt; go vet .; go run . <CR>")

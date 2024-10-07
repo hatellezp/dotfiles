@@ -31,3 +31,5 @@ fi
 # Added by Toolbox App
 export PATH="$PATH:/home/tellez/.local/share/JetBrains/Toolbox/scripts"
 
+
+[ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env

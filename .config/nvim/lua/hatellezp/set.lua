@@ -43,3 +43,6 @@ vim.g.rustfmt_autosave = 1
 
 -- try to format on save
 vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
+
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
