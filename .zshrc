@@ -15,6 +15,11 @@ export PATH=$PATH:"/home/tellez/gpt4all/bin"
 
 export GIT_EDITOR="/home/tellez/.local/bin/nvim.appimage"
 
+# open tmux in every terminal
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 source "$HOME/.zshrc_alias"
 
 # ===========
