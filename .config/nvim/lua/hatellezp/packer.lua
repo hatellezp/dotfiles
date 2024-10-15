@@ -96,14 +96,6 @@ return require('packer').startup(function(use)
       config = function() require("nvim-autopairs").setup {} end
   }
 
-  use({
-      "iamcco/markdown-preview.nvim",
-      as = "mkdp",
-      run = "cd app && npm install",
-      setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
-      ft = { "markdown" },
-  })
-
   use 'ray-x/go.nvim'
   use 'ray-x/guihua.lua' -- recommended if need floating window support
 end)
