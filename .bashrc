@@ -116,3 +116,18 @@ if ! shopt -oq posix; then
   fi
 fi
 . "$HOME/.cargo/env"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/tellez/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/tellez/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<

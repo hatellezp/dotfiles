@@ -32,4 +32,19 @@ fi
 export PATH="$PATH:/home/tellez/.local/share/JetBrains/Toolbox/scripts"
 
 
+
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/tellez/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/tellez/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<

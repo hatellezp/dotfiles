@@ -12,6 +12,9 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/tellez/.local/bin"
 export PATH=$PATH:"/home/tellez/gpt4all/bin"
+export PATH=$PATH:"/home/tellez/.luarocks/bin/"
+
+
 
 export GIT_EDITOR="/home/tellez/.local/bin/nvim.appimage"
 
@@ -171,5 +174,15 @@ export PATH=$PATH:/usr/local/go/bin
 
 export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so
 export PATH=$PATH:$HOME/zig
+export PATH=$PATH:$HOME/luajit/lj2/bin
+
 
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/tellez/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
