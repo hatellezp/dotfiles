@@ -36,6 +36,29 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
     group = autocmd_group,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "*.tex" },
+  callback = function()
+    vim.opt.wrap = true  -- Enable line wrapping
+    vim.opt.linebreak = true  -- Break lines at word boundaries
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    pattern = { "*.tex" },
+    desc = "Auto-format go files after saving using the go formatter",
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        vim.cmd(":silent !latexindent " .. fileName)
+        vim.cmd(":silent !pdflatex " .. fileName)
+        vim.cmd(":silent !bibtex " .. fileName)
+        vim.cmd(":silent !pdflatex " .. fileName)
+        vim.cmd(":silent !pdflatex " .. fileName)
+    end,
+    group = autocmd_group,
+})
+
+
 
 -- stupid ocamlformat can't format inplace
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
