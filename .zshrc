@@ -11,10 +11,6 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/tellez/.local/bin"
-export PATH=$PATH:"/home/tellez/gpt4all/bin"
-export PATH=$PATH:"/home/tellez/.luarocks/bin/"
-
-
 
 export GIT_EDITOR="/home/tellez/.local/bin/nvim.appimage"
 
@@ -28,14 +24,14 @@ source "$HOME/.zshrc_alias"
 # ===========
 # for key maps
 # setxkbmap eurkey
-setxkbmap fr
+# setxkbmap fr
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -134,23 +130,6 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export MODULAR_HOME="/home/tellez/.modular"
-export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/tellez/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/tellez/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/tellez/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/tellez/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 
 export NVM_DIR="$HOME/.nvm"
@@ -158,31 +137,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-eval "$(zoxide init zsh)"
-
-# opam configuration
-[[ ! -r /home/tellez/.opam/opam-init/init.zsh ]] || source /home/tellez/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+# eval "$(zoxide init zsh)"
 
 
 # asdf installation
 . "$HOME/.asdf/asdf.sh"
 . "$HOME/.asdf/completions/asdf.bash"
-export MODULAR_HOME="/home/tellez/.modular"
-export PATH="/home/tellez/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-export PATH=$PATH:/usr/local/go/bin
-# export PATH=$PATH:$HOME/go/bin
-
-export MOJO_PYTHON_LIBRARY=/home/tellez/anaconda3/lib/libpython3.so
-export PATH=$PATH:$HOME/zig
-export PATH=$PATH:$HOME/luajit/lj2/bin
-
 
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
-# >>> juliaup initialize >>>
 
-# !! Contents within this block are managed by juliaup !!
-
-path=('/home/tellez/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
