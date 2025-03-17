@@ -21,7 +21,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
-source "$HOME/.zshrc_alias"
+source "$HOME/.zsh_alias"
 
 # ===========
 # for key maps
@@ -148,6 +148,6 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
 
-home/tellez/.screenlayout.sh
+/home/tellez/.screenlayout.sh
 setxkbmap fr
 
