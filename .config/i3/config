@@ -9,6 +9,13 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+###########
+# Include #
+###########
+
+include ~/.config/i3/config.d/screens.conf
+
+
 ################
 # Set defaults #
 ################
@@ -320,7 +327,7 @@ bindsym $mod+n mode "$mode_system"
 
 set $mode_launch launch (f)firefox (q)qutebrowser (e)Emacs (c)Kcalc (w)Kwrite (r)RTmaps
 mode "$mode_launch" {
-    bindsym f exec --no-startup-id firefox, mode "default"
+    bindsym f exec --no-startup-id "org.mozilla.firefox", mode "default"
     bindsym p exec --no-startup-id "firefox -private", mode "default"
     bindsym q exec --no-startup-id qutebrowser, mode "default"
     bindsym e exec --no-startup-id emacs, mode "default"
@@ -431,3 +438,4 @@ client.background       #ffffff
 # exec --no-startup-id i3-msg 'workspace $ws3; exec firefox'
 
 exec --no-startup-id "$HOME/MyScripts/autostart.sh > ~/.output/autostart.sh"
+
