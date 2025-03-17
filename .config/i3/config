@@ -22,8 +22,8 @@ set $Locker i3lock && sleep 1
 # set $Locker i3exit lock
 # set $Locker gnome-screensaver-command --lock && sleep 1
 
-set $terminal "urxvt"
-set $file_manager "nautilus"
+# set $terminal "urxvt"
+# set $file_manager "nautilus"
 # Set Workspaces
 
 set $ws1 "1"
@@ -68,6 +68,7 @@ set $ws10b "10b"
 focus_follows_mouse no #disable focuse on moving mouse
 # font pango:monospace 14
 font pango:DejaVu Sans Mono 14
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 workspace_auto_back_and_forth no
@@ -78,7 +79,8 @@ workspace_auto_back_and_forth no
 # start a terminal
 # bindsym $mod+Return exec termite
 bindsym $mod+Return exec i3-sensible-terminal #execute the terminal describe by $TERMINAL
-bindsym $mod+u exec i3-sensible-terminal #execute the terminal describe by $TERMINAL
+# bindsym $mod+u exec i3-sensible-terminal #execute the terminal describe by $TERMINAL
+
 bindsym $mod+c exec xfce4-appfinder
 # bindsym Print exec --no-startup-id i3-scrot
 # bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -96,13 +98,16 @@ bindsym $mod+w exec rofi -show window
 
 # # Get a password with rofi from pass.
 # bindsym $mod+Shift+p exec ~/.local/bin/rofi-pass
+
 # # Get an emoji from emoji picker
 bindsym $mod+Shift+u exec ~/MyScripts/rofi-emojis
+
 # # Get an OTP with rofi from YubiKey.
 # bindsym $mod+y exec ~/MyScripts/rofi-yubi
 bindsym $mod+Shift+f exec ~/MyScripts/rofi-finder
 bindsym $mod+Shift+x exec ~/MyScripts/rofi-xrandr
 bindsym $mod+Escape exec "xrandr --auto"
+
 # bindsym $mod+Shift+d exec ~/MyScripts/RandomWallpaper.sh
 bindsym $mod+Control+d exec "variety -n"
 bindsym $mod+Shift+d exec "variety -f"
@@ -164,9 +169,9 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+Shift+q kill
 
 # Make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+Shift+equal move scratchpad
 # Show the first scratchpad window
-bindsym $mod+minus scratchpad show
+bindsym $mod+equal scratchpad show
 
 # change focus between tiling / floating windows
 bindsym $mod+d focus mode_toggle
@@ -187,6 +192,7 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 bindsym $mod+Tab workspace next_on_output
 bindsym $mod+Shift+Tab workspace prev_on_output
 
+# TODO: come back here
 #move current workspace to second monitor
 # bindsym $mod+u move workspace to output left
 # bindsym $mod+i move workspace to output right
@@ -205,9 +211,9 @@ bindsym $mod+eacute workspace $ws2
 bindsym $mod+quotedbl workspace $ws3
 bindsym $mod+apostrophe workspace $ws4
 bindsym $mod+parenleft workspace $ws5
-bindsym $mod+section workspace $ws6
+bindsym $mod+minus workspace $ws6
 bindsym $mod+egrave workspace $ws7
-bindsym $mod+exclam workspace $ws8
+bindsym $mod+underscore workspace $ws8
 bindsym $mod+ccedilla workspace $ws9
 bindsym $mod+agrave workspace $ws10
 
@@ -216,9 +222,9 @@ bindsym $mod2+eacute workspace $ws2b
 bindsym $mod2+quotedbl workspace $ws3b
 bindsym $mod2+apostrophe workspace $ws4b
 bindsym $mod2+parenleft workspace $ws5b
-bindsym $mod2+section workspace $ws6b
+bindsym $mod2+minus workspace $ws6b
 bindsym $mod2+egrave workspace $ws7b
-bindsym $mod2+exclam workspace $ws8b
+bindsym $mod2+underscore workspace $ws8b
 bindsym $mod2+ccedilla workspace $ws9b
 bindsym $mod2+agrave workspace $ws10b
 
@@ -227,10 +233,10 @@ bindsym $mod+Shift+ampersand move container to workspace $ws1
 bindsym $mod+Shift+eacute move container to workspace $ws2
 bindsym $mod+Shift+quotedbl move container to workspace $ws3
 bindsym $mod+Shift+apostrophe move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+section move container to workspace $ws6
+bindsym $mod+Shift+parenleft move container to workspace $ws5
+bindsym $mod+Shift+minus move container to workspace $ws6
 bindsym $mod+Shift+egrave move container to workspace $ws7
-bindsym $mod+Shift+exclam move container to workspace $ws8
+bindsym $mod+Shift+underscore move container to workspace $ws8
 bindsym $mod+Shift+ccedilla move container to workspace $ws9
 bindsym $mod+Shift+agrave move container to workspace $ws10
 
@@ -418,10 +424,10 @@ client.background       #ffffff
 # Start up #
 ############
 
-exec --no-startup-id exec "$terminal" --name scratchpad
-exec --no-startup-id exec "emacs"
-exec --no-startup-id i3-msg 'workspace $ws1; exec $terminal exec $terminal'
-exec --no-startup-id i3-msg 'workspace $ws2; exec $file_manager'
-exec --no-startup-id i3-msg 'workspace $ws3; exec firefox'
+# exec --no-startup-id exec "$terminal" --name scratchpad
+# exec --no-startup-id exec "emacs"
+# exec --no-startup-id i3-msg 'workspace $ws1; exec $terminal exec $terminal'
+# exec --no-startup-id i3-msg 'workspace $ws2; exec $file_manager'
+# exec --no-startup-id i3-msg 'workspace $ws3; exec firefox'
 
 exec --no-startup-id "$HOME/MyScripts/autostart.sh > ~/.output/autostart.sh"
