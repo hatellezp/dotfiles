@@ -149,4 +149,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
 
 home/tellez/.screenlayout.sh
+setxkbmap fr
 
