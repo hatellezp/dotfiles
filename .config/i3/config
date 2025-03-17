@@ -325,14 +325,14 @@ mode "$mode_system" {
 }
 bindsym $mod+n mode "$mode_system"
 
-set $mode_launch launch (f)firefox (q)qutebrowser (e)Emacs (c)Kcalc (w)Kwrite (r)RTmaps
+set $mode_launch launch (f)firefox (z)zotero (g)chrome (c)code (o)obsidian (r)RTmaps
 mode "$mode_launch" {
     bindsym f exec --no-startup-id "org.mozilla.firefox", mode "default"
     bindsym p exec --no-startup-id "firefox -private", mode "default"
-    bindsym q exec --no-startup-id qutebrowser, mode "default"
-    bindsym e exec --no-startup-id emacs, mode "default"
-    bindsym c exec --no-startup-id kcalc, mode "default"
-    bindsym w exec --no-startup-id kwrite, mode "default"
+    bindsym z exec --no-startup-id org.zotero.Zotero, mode "default"
+    bindsym g exec --no-startup-id "com.google.Chrome --disable-gpu", mode "default"
+    bindsym c exec --no-startup-id "code --disable-gpu", mode "default"
+    bindsym o exec --no-startup-id "md.obsidian.Obsidian --disable-gpu", mode "default"
     bindsym r exec --no-startup-id rtmaps, mode "default"
     # back to normal: Enter or Escape
     bindsym Return mode "default"

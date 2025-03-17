@@ -1,1 +1,3 @@
 alias code="code --disable-gpu"
+# alias obsidian="obsidian --disable-gpu"
+
