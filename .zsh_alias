@@ -1,3 +1,2 @@
 alias code="code --disable-gpu"
-# alias obsidian="obsidian --disable-gpu"
-
+alias vim="/home/tellez/.local/bin/nvim.appimage"
