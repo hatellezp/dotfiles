@@ -326,6 +326,17 @@ mode "$mode_system" {
 }
 bindsym $mod+n mode "$mode_system"
 
+set $mode_monitor_layout MonitorLayout (l) laptop, (w) work, (h) house
+mode "$mode_monitor_layout" {
+    bindsym l exec --no-startup-id "/home/tellez/.screenlayout.sh laptop", mode "default"
+    bindsym w exec --no-startup-id "/home/tellez/.screenlayout.sh work", mode "default"
+    bindsym h exec --no-startup-id "/home/tellez/.screenlayout.sh house", mode "default"
+
+    bindsym Escape mode "default"
+}
+bindsym $mod+m mode "$mode_monitor_layout"
+
+
 set $mode_launch launch (f)firefox (z)zotero (g)chrome (c)code (o)obsidian (r)RTmaps
 mode "$mode_launch" {
     bindsym f exec --no-startup-id "org.mozilla.firefox", mode "default"
