@@ -148,6 +148,6 @@ eval "$(zoxide init zsh)"
 
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
 
-/home/tellez/.screenlayout.sh
+# /home/tellez/.screenlayout.sh
 setxkbmap fr
 
