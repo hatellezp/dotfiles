@@ -22,10 +22,13 @@ fi
 
 # Check if i3 is the running window manager
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ] || [ "$DESKTOP_SESSION" = "i3" ] || pgrep -x "i3" > /dev/null; then
+    echo "i3 is running"
     # Set the primary, secondary, and tertiary monitors based on the detected layout
     if xrandr | grep "DP3-3 connected" || xrandr | grep "DP1-3 connected"; then
+        echo "with house layout"
     	xrandr --output "$PRIMARY_OUTPUT" --auto --output  "$TERTIARY_OUTPUT" --off
     else 
+        echo "work layout"
         xrandr --output "$PRIMARY_OUTPUT" --primary
         xrandr --output "$SECONDARY_OUTPUT" --auto --right-of "$PRIMARY_OUTPUT"
         xrandr --output "$TERTIARY_OUTPUT" --auto --left-of "$PRIMARY_OUTPUT"
