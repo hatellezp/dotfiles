@@ -192,8 +192,9 @@ bindsym $mod+Shift+c focus child
 #####################
 
 # workspace back and forth (with/without active container)
-bindsym $mod+b workspace back_and_forth
-bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+b exec blueman-manager
+bindsym $mod+Shift+b workspace back_and_forth
+# bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # Cycle through active workspaces
 bindsym $mod+Tab workspace next_on_output
