@@ -13,7 +13,7 @@
 # Include #
 ###########
 
-include ~/.config/i3/config.d/screens.conf
+# include ~/.config/i3/config.d/screens.conf
 
 
 ################
@@ -26,11 +26,10 @@ set $mod2 control
 
 # Set locker
 set $Locker i3lock && sleep 1
-# set $Locker i3exit lock
-# set $Locker gnome-screensaver-command --lock && sleep 1
 
-# set $terminal "urxvt"
-# set $file_manager "nautilus"
+# Set terminal
+set $terminal "terminator"
+
 # Set Workspaces
 
 set $ws1 "1"
@@ -326,7 +325,7 @@ mode "$mode_system" {
 }
 bindsym $mod+n mode "$mode_system"
 
-set $mode_monitor_layout MonitorLayout (l) laptop, (w) work, (h) house
+set $mode_monitor_layout Monitor Layout:  (l) laptop, (w) work, (h) house
 mode "$mode_monitor_layout" {
     bindsym l exec --no-startup-id "/home/tellez/.screenlayout.sh laptop", mode "default"
     bindsym w exec --no-startup-id "/home/tellez/.screenlayout.sh work", mode "default"
