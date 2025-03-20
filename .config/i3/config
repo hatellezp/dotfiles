@@ -25,7 +25,7 @@ set $mod Mod4
 set $mod2 control
 
 # Set locker
-set $Locker i3lock && sleep 1
+set $Locker i3lock -i ~/.config/i3/ressources/i3lock_wallpaper.png --clock --keylayout 0 --layout-color=ff0000ff --time-color=ff0000ff --date-color=ff0000ff  && sleep 1
 
 # Set terminal
 set $terminal "terminator"
