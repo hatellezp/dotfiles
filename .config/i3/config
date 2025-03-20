@@ -449,4 +449,4 @@ client.background       #ffffff
 # exec --no-startup-id i3-msg 'workspace $ws3; exec firefox'
 
 exec --no-startup-id "$HOME/MyScripts/autostart.sh > ~/.output/autostart.sh"
-
+exec --no-startup-id "feh ~/.config/i3/ressources/arch_wallpaper.jpg"
