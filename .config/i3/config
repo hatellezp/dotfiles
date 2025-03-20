@@ -28,7 +28,7 @@ set $mod2 control
 set $Locker i3lock -i ~/.config/i3/ressources/i3lock_wallpaper.png --clock --keylayout 0 --layout-color=ff0000ff --time-color=ff0000ff --date-color=ff0000ff  && sleep 1
 
 # Set terminal
-set $terminal "terminator"
+set $terminal "LIBGL_ALWAYS_SOFTWARE=1 alacritty -e tmux"
 
 # Set Workspaces
 
@@ -46,7 +46,7 @@ set $ws10 "10"
 
 # set $ws1 "1:"
 # set $ws2 "2:"
-# set $ws3 "3:"
+# set $ws4 "4:"
 # set $ws4 "4:"
 # set $ws5 "5:"
 # set $ws6 "6"
@@ -84,7 +84,8 @@ workspace_auto_back_and_forth no
 
 # start a terminal
 # bindsym $mod+Return exec termite
-bindsym $mod+Return exec i3-sensible-terminal #execute the terminal describe by $TERMINAL
+bindsym $mod+Return exec $terminal
+# i3-sensible-terminal #execute the terminal describe by $TERMINAL
 # bindsym $mod+u exec i3-sensible-terminal #execute the terminal describe by $TERMINAL
 
 bindsym $mod+c exec xfce4-appfinder
@@ -336,7 +337,7 @@ mode "$mode_monitor_layout" {
 bindsym $mod+m mode "$mode_monitor_layout"
 
 
-set $mode_launch launch (f)firefox (z)zotero (g)chrome (c)code (o)obsidian (r)RTmaps
+set $mode_launch launch (f)firefox (z)zotero (g)chrome (c)code (o)obsidian
 mode "$mode_launch" {
     bindsym f exec --no-startup-id "org.mozilla.firefox", mode "default"
     bindsym p exec --no-startup-id "firefox -private", mode "default"
@@ -344,7 +345,7 @@ mode "$mode_launch" {
     bindsym g exec --no-startup-id "com.google.Chrome --disable-gpu", mode "default"
     bindsym c exec --no-startup-id "code --disable-gpu", mode "default"
     bindsym o exec --no-startup-id "md.obsidian.Obsidian --disable-gpu", mode "default"
-    bindsym r exec --no-startup-id rtmaps, mode "default"
+
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
