@@ -402,6 +402,9 @@ for_window [class="powder64"] floating disable
 for_window [class=".*"] border pixel 3
 # hide_edge_borders smart
 
+# blueman-manager float
+for_window [class="Blueman-manager"] floating enable resize set 600 400
+
 ##########
 # Assign #
 ##########
