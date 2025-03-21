@@ -11,8 +11,12 @@ fi
 setxkbmap fr
 
 # Path to your oh-my-zsh installation.
+#
+export TERM=tmux-256color
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/tellez/.local/bin"
+
+export PATH=$PATH:"$HOME/.local/share/gem/ruby/3.3.0/bin"
 
 export GIT_EDITOR="/home/tellez/.local/bin/nvim.appimage"
 
@@ -144,7 +148,7 @@ eval "$(zoxide init zsh)"
 
 # asdf installation
 . "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
+# . "$HOME/.asdf/completions/asdf.bash"
 
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
 

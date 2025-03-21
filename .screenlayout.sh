@@ -30,7 +30,7 @@ else
     HOUSE_OUTPUT="DP1-3"
 fi
 
-# echo "outputs: laptop=$LAPTOP_OUTPUT house=$HOUSE_OUTPUT work_primary=$WORK_PRIMARY_OUTPUT work_secondary=$WORK_SECONDARY_OUTPUT"
+echo "outputs: laptop=$LAPTOP_OUTPUT house=$HOUSE_OUTPUT work_primary=$WORK_PRIMARY_OUTPUT work_secondary=$WORK_SECONDARY_OUTPUT"
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ] || [ "$DESKTOP_SESSION" = "i3" ] || pgrep -x "i3" > /dev/null; then
     case "$1" in
@@ -46,9 +46,9 @@ if [ "$XDG_CURRENT_DESKTOP" = "i3" ] || [ "$DESKTOP_SESSION" = "i3" ] || pgrep -
             xrandr --output $WORK_SECONDARY_OUTPUT --mode 1920x1080 --right-of $WORK_PRIMARY_OUTPUT
             ;;
         house)
-    	    xrandr --output $HOUSE_OUTPUT --primary
-            xrandr --output $LAPTOP_OUTPUT --off
-            xrandr --output $WORK_PRIMARY_OUTPUT --off
+    	    xrandr --output $HOUSE_OUTPUT --primary --mode 3840x2160
+            xrandr --output $LAPTOP_OUTPUT --off 
+            xrandr --output $WORK_PRIMARY_OUTPUT --off 
             xrandr --output $WORK_SECONDARY_OUTPUT --off
             ;;
         *)

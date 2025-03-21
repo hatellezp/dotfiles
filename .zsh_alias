@@ -1,2 +1,3 @@
 alias code="code --disable-gpu"
-alias vim="/home/tellez/.local/bin/nvim.appimage"
+alias vim="$HOME/.local/bin/nvim.appimage"
+alias vimconfig="vim $HOME/.config/i3/config"
