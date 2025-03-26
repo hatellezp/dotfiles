@@ -80,9 +80,12 @@ bindsym $mod+Shift+s exec flameshot gui
 
 # launcher
 bindsym $mod+space exec rofi -show run
-bindsym $mod+w exec rofi -show window
+bindsym $mod+Shift+w exec rofi -show window
 
 bindsym $mod+b exec blueman-manager
+bindsym $mod+w exec nm-connection-editor
+
+
 
 #################
 # Start Scripts #
