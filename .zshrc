@@ -13,6 +13,7 @@ setxkbmap fr
 # Path to your oh-my-zsh installation.
 #
 export TERM=tmux-256color
+export EDITOR=vim
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/tellez/.local/bin"
 
