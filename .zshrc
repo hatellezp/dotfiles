@@ -155,3 +155,10 @@ eval "$(zoxide init zsh)"
 # /home/tellez/.screenlayout.sh
 setxkbmap fr
 
+export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+
+export PATH="$PATH:/home/tellez/.modular/bin"
