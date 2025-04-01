@@ -150,7 +150,7 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 bar {
 	font pango:FontAwesome, Fira mono 12
         status_command /usr/bin/bumblebee-status \
-	-m nic cpu memory bluetooth2 pasink battery datetime layout \
+	-m nic cpu memory bluetooth2 pasink pasource battery datetime layout \
 	-p root.path=/ datetime.format="%d/%m/%Y %H:%M:%S" \
 	-t moonlight-powerline
 }
