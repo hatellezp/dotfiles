@@ -15,22 +15,34 @@ LAPTOP_OUTPUT="eDP1"
 if xrandr | grep "DP3-5 connected"; then
     WORK_PRIMARY_OUTPUT="DP3-5"
 else
-    WORK_PRIMARY_OUTPUT="DP1-5"
+    if xrandr | grep "DP1-5 connected"; then
+        WORK_PRIMARY_OUTPUT="DP1-5"
+    else
+        WORK_PRIMARY_OUTPUT="none"
+    fi
 fi
 
 if xrandr | grep "DP3-6 connected"; then
     WORK_SECONDARY_OUTPUT="DP3-6"
 else
-    WORK_SECONDARY_OUTPUT="DP1-6"
+    if xrandr | grep "DP1-6 connected"; then
+        WORK_SECONDARY_OUTPUT="DP1-6"
+    else
+        WORK_SECONDARY_OUTPUT="none"
+    fi
 fi
 
 if xrandr | grep "DP3-3 connected"; then
     HOUSE_OUTPUT="DP3-3"
 else
-    HOUSE_OUTPUT="DP1-3"
+    if xrandr | grep "DP1-3"; then
+        HOUSE_OUTPUT="DP1-3"
+    else
+        HOUSE_OUTPUT="none"
+    fi
 fi
 
-echo "outputs: laptop=$LAPTOP_OUTPUT house=$HOUSE_OUTPUT work_primary=$WORK_PRIMARY_OUTPUT work_secondary=$WORK_SECONDARY_OUTPUT"
+zenity --info --text="OUTPUTS: laptop=$LAPTOP_OUTPUT house=$HOUSE_OUTPUT work_primary=$WORK_PRIMARY_OUTPUT work_secondary=$WORK_SECONDARY_OUTPUT"
 
 if [ "$XDG_CURRENT_DESKTOP" = "i3" ] || [ "$DESKTOP_SESSION" = "i3" ] || pgrep -x "i3" > /dev/null; then
     case "$1" in
