@@ -163,3 +163,14 @@ export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
 export PATH="$PATH:/home/tellez/.modular/bin"
+
+export PATH="$PATH:$HOME/zig/current_inst"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/tellez/.opam/opam-init/init.zsh' ]] || source '/home/tellez/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration

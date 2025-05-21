@@ -1,5 +1,5 @@
 alias vim="/home/tellez/.local/bin/nvim.appimage"
-alias nvim="/home/tellez/.local/bin/nvim.appimage"
+# alias nvim="/home/tellez/.local/bin/nvim.appimage"
 alias ovim="/usr/bin/vim"
 alias putop="opam exec -- dune utop"
 alias ptpython="ptpython --vi"
