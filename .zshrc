@@ -163,6 +163,9 @@ export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
 export PATH="$PATH:/home/tellez/.modular/bin"
+export PATH="$PATH:/home/tellez/.local/bin"
+
+
 
 export PATH="$PATH:$HOME/zig/current_inst"
 
