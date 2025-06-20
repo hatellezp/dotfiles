@@ -86,6 +86,7 @@ bindsym $mod+Shift+w exec rofi -show window
 
 bindsym $mod+b exec blueman-manager
 bindsym $mod+w exec nm-connection-editor
+bindsym $mod+Shift+v exec --no-startup-id toggle-vpn.sh
 
 
 
@@ -150,7 +151,7 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 bar {
 	font pango:FontAwesome, Fira mono 12
         status_command /usr/bin/bumblebee-status \
-	-m nic cpu memory bluetooth2 pasink pasource battery datetime layout \
+	-m nic vpn cpu memory bluetooth2 pasink pasource battery datetime layout \
 	-p root.path=/ datetime.format="%d/%m/%Y %H:%M:%S" \
 	-t moonlight-powerline
 }
