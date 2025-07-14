@@ -2,3 +2,7 @@ alias code="code --disable-gpu"
 # alias vim="$HOME/.local/bin/nvim.appimage"
 alias vim="lvim ."
 alias vimconfig="vim $HOME/.config/i3/config"
+alias wifi-util="nmtui"
+alias wifi-tool="nmtui"
+alias wifi-connect-tool="nmtui"
+
