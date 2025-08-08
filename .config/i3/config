@@ -106,8 +106,13 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 # Sreen brightness controls
 set_from_resource $screen echo "$SCREEN"
-bindsym XF86MonBrightnessUp exec ~/MyScripts/brightness.sh + $screen
-bindsym XF86MonBrightnessDown exec  ~/MyScripts/brightness.sh - $screen
+# Brightness controls
+# bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%   # increase brightness
+# bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- # decrease brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id bash -c 'brightnessctl set +5% && pkill -f -SIGUSR1 bumblebee-status'
+bindsym XF86MonBrightnessDown exec --no-startup-id bash -c 'brightnessctl set 5%- && pkill -f -SIGUSR1 bumblebee-status'
+
+
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
@@ -151,8 +156,8 @@ bindsym $mod+Shift+e exec "i3-msg exit"
 bar {
 	font pango:FontAwesome, Fira mono 12
         status_command /usr/bin/bumblebee-status \
-	-m nic vpn cpu memory bluetooth2 pasink pasource battery datetime layout \
-	-p root.path=/ datetime.format="%d/%m/%Y %H:%M:%S" \
+	-m nic vpn cpu memory bluetooth2 pasink pasource brightness battery datetime layout \
+	-p root.path=/ brightness.use_acpi=true datetime.format="%d/%m/%Y %H:%M:%S" \
 	-t moonlight-powerline
 }
 

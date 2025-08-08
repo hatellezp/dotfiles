@@ -5,4 +5,4 @@ alias vimconfig="vim $HOME/.config/i3/config"
 alias wifi-util="nmtui"
 alias wifi-tool="nmtui"
 alias wifi-connect-tool="nmtui"
-
+alias python_quick_serve="python -m http.server 8555"
