@@ -13,22 +13,22 @@ LAPTOP_OUTPUT="eDP1"
 # are connected
 
 if xrandr | grep "DP3-5 connected"; then
-    WORK_PRIMARY_OUTPUT="DP3-5"
+    WORK_SECONDARY_OUTPUT="DP3-5"
 else
     if xrandr | grep "DP1-5 connected"; then
-        WORK_PRIMARY_OUTPUT="DP1-5"
+        WORK_SECONDARY_OUTPUT="DP1-5"
     else
-        WORK_PRIMARY_OUTPUT="none"
+        WORK_SECONDARY_OUTPUT="none"
     fi
 fi
 
 if xrandr | grep "DP3-6 connected"; then
-    WORK_SECONDARY_OUTPUT="DP3-6"
+    WORK_PRIMARY_OUTPUT="DP3-6"
 else
     if xrandr | grep "DP1-6 connected"; then
-        WORK_SECONDARY_OUTPUT="DP1-6"
+        WORK_PRIMARY_OUTPUT="DP1-6"
     else
-        WORK_SECONDARY_OUTPUT="none"
+        WORK_PRIMARY_OUTPUT="none"
     fi
 fi
 
