@@ -53,9 +53,9 @@ if [ "$XDG_CURRENT_DESKTOP" = "i3" ] || [ "$DESKTOP_SESSION" = "i3" ] || pgrep -
             xrandr --output $WORK_SECONDARY_OUTPUT --off
             ;;
         work)
-            xrandr --output $WORK_PRIMARY_OUTPUT --primary --mode 1920x1200
+            xrandr --output $WORK_PRIMARY_OUTPUT --primary --mode 1920x1080
             xrandr --output $LAPTOP_OUTPUT --mode 1920x1200 --left-of $WORK_PRIMARY_OUTPUT
-            xrandr --output $WORK_SECONDARY_OUTPUT --mode 1920x1080 --right-of $WORK_PRIMARY_OUTPUT
+            xrandr --output $WORK_SECONDARY_OUTPUT --mode 1920x1200 --right-of $WORK_PRIMARY_OUTPUT
             ;;
         house)
     	    xrandr --output $HOUSE_OUTPUT --primary --mode 3840x2160
