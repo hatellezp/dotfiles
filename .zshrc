@@ -8,7 +8,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-setxkbmap fr
+# setxkbmap fr
 
 # Path to your oh-my-zsh installation.
 #
@@ -154,7 +154,7 @@ eval "$(zoxide init zsh)"
 [ -f "/home/tellez/.ghcup/env" ] && . "/home/tellez/.ghcup/env" # ghcup-env
 
 # /home/tellez/.screenlayout.sh
-setxkbmap fr
+# setxkbmap fr
 
 export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
