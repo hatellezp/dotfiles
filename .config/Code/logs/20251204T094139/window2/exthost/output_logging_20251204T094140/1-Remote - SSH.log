@@ -1,0 +1,148 @@
+[09:41:41.052] Log Level: 2
+[09:41:41.080] VS Code version: 1.106.3
+[09:41:41.080] Remote-SSH version: remote-ssh@0.120.0
+[09:41:41.080] linux x64
+[09:41:41.093] SSH Resolver called for "ssh-remote+athena3", attempt 1
+[09:41:41.100] remote.SSH.useLocalServer = true
+[09:41:41.101] remote.SSH.useExecServer = true
+[09:41:41.101] remote.SSH.bindHost = {}
+[09:41:41.101] remote.SSH.path = 
+[09:41:41.101] remote.SSH.configFile = 
+[09:41:41.102] remote.SSH.useFlock = true
+[09:41:41.102] remote.SSH.lockfilesInTmp = false
+[09:41:41.102] remote.SSH.localServerDownload = auto
+[09:41:41.102] remote.SSH.remoteServerListenOnSocket = false
+[09:41:41.103] remote.SSH.defaultExtensions = []
+[09:41:41.103] remote.SSH.defaultExtensionsIfInstalledLocally = []
+[09:41:41.103] remote.SSH.loglevel = 2
+[09:41:41.103] remote.SSH.enableDynamicForwarding = true
+[09:41:41.104] remote.SSH.enableRemoteCommand = false
+[09:41:41.104] remote.SSH.serverPickPortsFromRange = {}
+[09:41:41.104] remote.SSH.serverInstallPath = {}
+[09:41:41.104] remote.SSH.permitPtyAllocation = false
+[09:41:41.105] remote.SSH.preferredLocalPortRange = undefined
+[09:41:41.108] remote.SSH.useCurlAndWgetConfigurationFiles = false
+[09:41:41.108] remote.SSH.experimental.chat = true
+[09:41:41.108] remote.SSH.experimental.enhancedSessionLogs = true
+[09:41:41.108] remote.SSH.httpProxy = {"*":""}
+[09:41:41.108] remote.SSH.httpsProxy = {"*":""}
+[09:41:41.119] SSH Resolver called for host: athena3
+[09:41:41.120] Setting up SSH remote "athena3"
+[09:41:41.127] Acquiring local install lock: /tmp/vscode-remote-ssh-73cad88f-install.lock
+[09:41:41.128] Looking for existing server data file at /home/tellez/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-73cad88f-bf9252a2fb45be6893dd8870c0bf37e2e1766d61-0.120.0-es/data.json
+[09:41:41.128] No existing data file
+[09:41:41.129] Using commit id "bf9252a2fb45be6893dd8870c0bf37e2e1766d61" and quality "stable" for server
+[09:41:41.129] Extensions to install: 
+[09:41:41.139] Install and start server if needed
+[09:41:41.144] PATH: /home/tellez/.opam/5.4.0/bin:/home/tellez/.asdf/shims:/home/tellez/.asdf/bin:/home/tellez/.nvm/versions/node/v22.20.0/bin:/home/tellez/.juliaup/bin:/home/tellez/.cargo/bin:/home/tellez/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tellez/.local/share/JetBrains/Toolbox/scripts:/home/tellez/.cabal/bin:/home/tellez/.ghcup/bin:/home/tellez/.local/bin:/home/tellez/.local/share/gem/ruby/3.3.0/bin:/home/tellez/.modular/bin:/home/tellez/.local/bin:/home/tellez/zig/current_inst
+[09:41:41.145] Checking ssh with "ssh -V"
+[09:41:41.158] > OpenSSH_9.6p1 Ubuntu-3ubuntu13.14, OpenSSL 3.0.13 30 Jan 2024
+
+[09:41:41.162] askpass server listening on /run/user/1000/vscode-ssh-askpass-b9da6cdb3f1a0ff9cca8844cd0134a47d9e3e952.sock
+[09:41:41.163] Spawning local server with {"serverId":1,"ipcHandlePath":"/run/user/1000/vscode-ssh-askpass-ab0319a09dd3e983bd5791c0f663a63b20e61f3b.sock","sshCommand":"ssh","sshArgs":["-v","-T","-D","41111","-o","ConnectTimeout=15","athena3"],"serverDataFolderName":".vscode-server","dataFilePath":"/home/tellez/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-73cad88f-bf9252a2fb45be6893dd8870c0bf37e2e1766d61-0.120.0-es/data.json"}
+[09:41:41.163] Local server env: {"SSH_AUTH_SOCK":"/run/user/1000/keyring/ssh","SHELL":"/usr/bin/zsh","DISPLAY":":1","ELECTRON_RUN_AS_NODE":"1","SSH_ASKPASS":"/home/tellez/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/local-server/askpass.sh","VSCODE_SSH_ASKPASS_NODE":"/usr/share/code/code","VSCODE_SSH_ASKPASS_EXTRA_ARGS":"","VSCODE_SSH_ASKPASS_MAIN":"/home/tellez/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/askpass-main.js","VSCODE_SSH_ASKPASS_HANDLE":"/run/user/1000/vscode-ssh-askpass-b9da6cdb3f1a0ff9cca8844cd0134a47d9e3e952.sock"}
+[09:41:41.168] Spawned 6461
+[09:41:41.170] Using connect timeout of 17 seconds
+[09:41:41.279] > local-server-1> Running ssh connection command: ssh -v -T -D 41111 -o ConnectTimeout=15 athena3
+[09:41:41.283] > local-server-1> Spawned ssh, pid=6469
+[09:41:41.287] stderr> OpenSSH_9.6p1 Ubuntu-3ubuntu13.14, OpenSSL 3.0.13 30 Jan 2024
+[09:41:42.789] stderr> debug1: Server host key: ssh-ed25519 SHA256:GOHEjnNpcQd4N7CpZMH2wYGfwq8w83orBN8CcDUUb/U
+[09:41:42.869] stderr> No Kerberos credentials available (default cache: FILE:/tmp/krb5cc_1000)
+[09:41:42.869] stderr> 
+[09:41:42.869] stderr> 
+[09:41:42.884] stderr> No Kerberos credentials available (default cache: FILE:/tmp/krb5cc_1000)
+[09:41:42.884] stderr> 
+[09:41:42.884] stderr> 
+[09:41:43.017] Got askpass request: {"request":" Enter passphrase for key '/home/tellez/.ssh/id_rsa': "}
+[09:41:43.018] Detected passphrase message
+[09:41:43.019] Listening for interwindow password on /run/user/1000/vscode-ssh-askpass-7b8e728970b2ee0b8fdfc103f467cf10a9ee9334.sock
+[09:41:43.019] Writing password prompt to globalState
+[09:42:54.913] Got passphrase response
+[09:42:54.913] Interactor gave response: ***************
+[09:42:54.913] Cleaning up other-window auth server
+[09:42:54.914] Using connect timeout of 17 seconds
+[09:42:55.141] stderr> Authenticated to athena3 ([172.16.4.17]:22) using "publickey".
+[09:42:55.359] > ready: 2b00fea2c753
+[09:42:55.366] > Linux 6.16.7-200.fc42.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Sep 11 17:46:54 UTC 2025
+[09:42:55.366] Platform: linux
+[09:42:55.372] > /usr/bin/zsh
+[09:42:55.372] Parent Shell: zsh
+[09:42:55.372] Parent Shell pid: 6461
+[09:42:55.373] Waiting for subshell to start
+[09:42:55.378] > 1698689
+[09:42:55.378] stdout -> '1698689'
+[09:42:55.378] sub-process detected
+[09:42:55.388] > 2b00fea2c753: running
+> Script executing under PID: 1698689
+[09:42:55.393] > Found existing installation at /home/tellez/.vscode-server...
+> Starting VS Code CLI...
+> Removing old logfile at /home/tellez/.vscode-server/.cli.bf9252a2fb45be6893dd8870c0bf37e2e1766d61.log
+[09:42:55.398] > Spawned remote CLI: 1698707
+> Waiting for server log...
+[09:42:55.433] > 2b00fea2c753: start
+> listeningOn==127.0.0.1:40403==
+> osReleaseId==fedora==
+> arch==x86_64==
+> vscodeArch==x64==
+> bitness==64==
+> tmpDir==/run/user/10109==
+> platform==linux==
+> unpackResult====
+> didLocalDownload==0==
+> downloadTime====
+> installTime====
+> serverStartTime==36==
+> execServerToken==111111a1-1a11-1a11-111a-11111a11a111==
+> platformDownloadPath==cli-alpine-x64==
+> SSH_AUTH_SOCK====
+> DISPLAY====
+> 2b00fea2c753: end
+[09:42:55.434] Received install output: 
+listeningOn==127.0.0.1:40403==
+osReleaseId==fedora==
+arch==x86_64==
+vscodeArch==x64==
+bitness==64==
+tmpDir==/run/user/10109==
+platform==linux==
+unpackResult====
+didLocalDownload==0==
+downloadTime====
+installTime====
+serverStartTime==36==
+execServerToken==111111a1-1a11-1a11-111a-11111a11a111==
+platformDownloadPath==cli-alpine-x64==
+SSH_AUTH_SOCK====
+DISPLAY====
+
+[09:42:55.435] Remote server is listening on port 40403
+[09:42:55.435] Parsed server configuration: {"serverConfiguration":{"remoteListeningOn":{"port":40403},"osReleaseId":"fedora","arch":"x86_64","sshAuthSock":"","display":"","tmpDir":"/run/user/10109","platform":"linux","execServerToken":"111111a1-1a11-1a11-111a-11111a11a111"},"serverStartTime":36,"installUnpackCode":""}
+[09:42:55.436] Persisting server connection details to /home/tellez/.config/Code/User/globalStorage/ms-vscode-remote.remote-ssh/vscode-ssh-host-73cad88f-bf9252a2fb45be6893dd8870c0bf37e2e1766d61-0.120.0-es/data.json
+[09:42:55.438] Starting forwarding server. local port 37965 -> socksPort 41111 -> remotePort 40403
+[09:42:55.438] Forwarding server listening on port 37965
+[09:42:55.438] Waiting for ssh tunnel to be ready
+[09:42:55.439] [Forwarding server port 37965] Got connection 0
+[09:42:55.440] Tunneled port 40403 to local port 37965
+[09:42:55.440] Resolved "ssh-remote+athena3" to "port 37965"
+[09:42:55.448] Initizing new exec server for ssh-remote+athena3
+[09:42:55.448] Resolving exec server at port 37965
+[09:42:55.449] [Forwarding server port 37965] Got connection 1
+[09:42:55.491] Exec server for ssh-remote+athena3 created and cached
+[09:42:55.492] Extensions to install: 
+[09:42:55.499] ------
+
+
+
+
+[09:42:55.500] No hints found in the recent session.
+[09:42:55.546] [server] Checking /home/tellez/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/log.txt and /home/tellez/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/pid.txt for a running server...
+[09:42:55.546] [server] Found running server (pid=1643918)
+[09:42:58.856] Opening exec server for ssh-remote+athena3
+[09:42:59.002] Opening exec server for ssh-remote+athena3
+[09:42:59.013] Verified and reusing cached exec server for ssh-remote+athena3
+[09:42:59.013] No hints found in the recent session.
+[09:42:59.063] Verified and reusing cached exec server for ssh-remote+athena3
+[09:42:59.063] No hints found in the recent session.
+[09:42:59.085] Opening exec server for ssh-remote+athena3
+[09:42:59.116] Verified and reusing cached exec server for ssh-remote+athena3
+[09:42:59.116] No hints found in the recent session.

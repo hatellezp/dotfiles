@@ -1,0 +1,26 @@
+[2025-12-04T08:42:59.118Z] Start: Loading environment from ExecServer
+[2025-12-04T08:42:59.118Z] Dev Containers 0.431.1 over Remote - SSH 0.120.0 in VS Code 1.106.3 (bf9252a2fb45be6893dd8870c0bf37e2e1766d61).
+[2025-12-04T08:42:59.151Z] Stop (33 ms): Loading environment from ExecServer
+[2025-12-04T08:42:59.151Z] Host OS: linux 6.16.7-200.fc42.x86_64
+[2025-12-04T08:42:59.152Z] Host CWD: /home/tellez/gitlab/local_llm_poc
+[2025-12-04T08:42:59.152Z] Start: Run: /bin/sh 
+[2025-12-04T08:42:59.253Z] Start: Run in host: echo ~
+[2025-12-04T08:42:59.285Z] /home/tellez
+[2025-12-04T08:42:59.286Z] 
+[2025-12-04T08:42:59.286Z] Stop (33 ms): Run in host: echo ~
+[2025-12-04T08:42:59.286Z] Start: Run in host: id -un
+[2025-12-04T08:42:59.332Z] tellez
+[2025-12-04T08:42:59.333Z] 
+[2025-12-04T08:42:59.333Z] Stop (47 ms): Run in host: id -un
+[2025-12-04T08:42:59.335Z] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'tellez' || grep -E '^tellez|^[^:]*:[^:]*:tellez:' /etc/passwd || true)
+[2025-12-04T08:42:59.356Z] Stop (21 ms): Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'tellez' || grep -E '^tellez|^[^:]*:[^:]*:tellez:' /etc/passwd || true)
+[2025-12-04T08:42:59.357Z] userEnvProbe: loginInteractiveShell (default)
+[2025-12-04T08:42:59.357Z] userEnvProbe: not found in cache
+[2025-12-04T08:42:59.358Z] userEnvProbe shell: /bin/bash
+[2025-12-04T08:43:01.360Z] Start: Run: /bin/sh 
+[2025-12-04T08:43:01.380Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:43:02.747Z] Stop (1367 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:43:02.757Z] userEnvProbe is taking longer than 2 seconds. Process not found.
+[2025-12-04T08:43:09.359Z] userEnvProbe is taking longer than 10 seconds. Avoid waiting for user input in your shell's startup scripts. Continuing.
+[2025-12-04T08:43:09.510Z] Initializing configuration support...
+[2025-12-04T08:43:09.511Z] Internal initialization of dev container support package...

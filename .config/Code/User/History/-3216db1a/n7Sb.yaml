@@ -1,0 +1,25 @@
+name: MyProject
+version: 0.0.1
+schema: v1
+models:
+  - name: Small-LM3-3B (Local)
+    provider: openai
+    model: HuggingFaceTB/SmolLM3-3B
+    roles:
+      - chat
+    defaultCompletionOptions:
+      temperature: 0.7
+      maxTokens: 1500
+    apiBase: http://athena3:8096/v1
+    apiKey: 'tellez'
+  - name: Qwen3-4bit (Local)
+    provider: openai
+    # model: HuggingFaceTB/SmolLM3-3B
+    model: cpatonn/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit
+    roles:
+      - chat
+    defaultCompletionOptions:
+      temperature: 0.7
+      maxTokens: 1500
+    apiBase: http://athena3:8097/v1
+    api_key: ''

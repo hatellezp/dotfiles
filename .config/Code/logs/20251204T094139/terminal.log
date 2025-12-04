@@ -1,0 +1,37 @@
+2025-12-04 09:42:02.893 [info] Latency measurements for attached-container+7b22636f6e7461696e65724e616d65223a222f6475616c646d5f646576227d@ssh-remote+athena1 backend
+window<->ptyhostservice<->ptyhost: 9.70ms
+ptyhostservice<->ptyhost: 0.34ms []
+2025-12-04 09:42:59.038 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 666.40ms
+ptyhostservice<->ptyhost: 2.43ms []
+2025-12-04 09:42:59.038 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 666.20ms
+ptyhostservice<->ptyhost: 2.33ms []
+2025-12-04 09:42:59.038 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 666.00ms
+ptyhostservice<->ptyhost: 2.27ms []
+2025-12-04 09:42:59.038 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 666.00ms
+ptyhostservice<->ptyhost: 2.24ms []
+2025-12-04 09:43:00.301 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 39.20ms
+ptyhostservice<->ptyhost: 0.44ms []
+2025-12-04 12:03:30.570 [info] Latency measurements for local backend
+window<->ptyhost (message port): 0.70ms
+window<->ptyhostservice<->ptyhost: 1.40ms
+ptyhostservice<->ptyhost: 0.48ms []
+2025-12-04 12:03:44.099 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 145.30ms
+ptyhostservice<->ptyhost: 0.45ms []
+2025-12-04 12:03:44.099 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 144.80ms
+ptyhostservice<->ptyhost: 0.40ms []
+2025-12-04 12:03:44.099 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 144.60ms
+ptyhostservice<->ptyhost: 0.41ms []
+2025-12-04 12:03:44.100 [info] Latency measurements for ssh-remote+athena3 backend
+window<->ptyhostservice<->ptyhost: 144.50ms
+ptyhostservice<->ptyhost: 0.40ms []
+2025-12-04 13:38:01.771 [info] Latency measurements for attached-container+7b22636f6e7461696e65724e616d65223a222f6475616c646d5f646576227d@ssh-remote+athena1 backend
+window<->ptyhostservice<->ptyhost: 8.10ms
+ptyhostservice<->ptyhost: 0.31ms []

@@ -1,0 +1,19 @@
+2025-12-04 14:39:55.734 [info] Starting Python Locator /home/tellez/.vscode/extensions/ms-python.python-2025.18.0-linux-x64/python-env-tools/bin/pet server
+2025-12-04 14:39:58.519 [info] Discovered env: /bin/python3
+2025-12-04 14:39:58.526 [info] Discovered env: /usr/bin/python3
+2025-12-04 14:39:58.576 [info] Locator Conda took 253.350328ms
+2025-12-04 14:39:58.576 [info] Locator Homebrew took 110.046µs
+2025-12-04 14:39:58.576 [info] Locator LinuxGlobal took 205.536166ms
+2025-12-04 14:39:58.576 [info] Locator PipEnv took 2.072701ms
+2025-12-04 14:39:58.576 [info] Locator Pixi took 27.824µs
+2025-12-04 14:39:58.576 [info] Locator Poetry took 188.522µs
+2025-12-04 14:39:58.576 [info] Locator PyEnv took 114.949µs
+2025-12-04 14:39:58.577 [info] Locator Venv took 20.04µs
+2025-12-04 14:39:58.585 [info] Locator VirtualEnv took 29.915µs
+2025-12-04 14:39:58.586 [info] Locator VirtualEnvWrapper took 29.081µs
+2025-12-04 14:39:58.608 [info] Locator GlobalVirtualEnvs took 45.844µs
+2025-12-04 14:39:58.631 [info] Locator Locators took 278.060571ms
+2025-12-04 14:39:58.631 [info] Locator Path took 348.944606ms
+2025-12-04 14:39:58.631 [info] Locator Workspaces took 115.699412ms
+2025-12-04 14:39:58.632 [info] Refresh completed in 349ms
+2025-12-04 14:39:58.853 [info] Resolved Python Environment /bin/python3

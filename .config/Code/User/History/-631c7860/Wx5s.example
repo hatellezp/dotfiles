@@ -1,0 +1,44 @@
+HF_TOKEN=''
+VLLM_AUTOCOMPLETE_PORT=8095
+VLLM_CHAT_PORT=8096
+VLLM_CODE_PORT=8097
+WEBUI_PORT=8098
+WEBUI_PORT_SECONDARY=8099
+DOCUMENTATION_PORT=8081
+
+
+SMOLM3_3B_FLAGS='
+    --model HuggingFaceTB/SmolLM3-3B 
+    --gpu-memory-utilization 0.6 
+    --max-model-len 8192 
+    --max-num-seqs 128
+'
+DEEPSEEKR1_32B_FLAGS='
+    --model unsloth/DeepSeek-R1-Distill-Qwen-32B-bnb-4bit 
+    --gpu-memory-utilization 0.9
+    --max-model-len 8192 
+    --max-num-seqs 128
+    --kv-cache-dtype fp8 
+    --reasoning-parser deepseek_r1
+'
+LLAMA3_1_8B_FLAGS='
+    --model meta-llama/Llama-3.1-8B-Instruct
+    --gpu-memory-utilization 0.9
+    --max-model-len 8192 
+    --max-num-seqs 128 
+    --kv-cache-dtype fp8 
+'
+QWEN3CODER_30B_FLAGS='
+    --model cpatonn/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit
+    --gpu-memory-utilization 0.85
+    --max-model-len 8192
+    --max-num-seqs 128
+    --kv-cache-dtype fp8
+'
+QWEN2_5CODER_1_5B_FLAGS='
+    --model Qwen/Qwen2.5-Coder-1.5B
+    --gpu-memory-utilization 0.2
+    --max-model-len 8192
+    --max-num-seqs 128
+    --kv-cache-dtype fp8
+'

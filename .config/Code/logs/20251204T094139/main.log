@@ -1,0 +1,16 @@
+2025-12-04 09:41:39.207 [info] update#setState idle
+2025-12-04 09:42:09.210 [info] update#setState checking for updates
+2025-12-04 09:42:09.243 [info] update#setState idle
+2025-12-04 10:42:09.222 [info] update#setState checking for updates
+2025-12-04 10:42:09.477 [info] update#setState idle
+2025-12-04 10:53:31.598 [info] Extension host with pid 6416 exited with code: 0, signal: unknown.
+2025-12-04 11:42:09.232 [info] update#setState checking for updates
+2025-12-04 11:42:10.250 [info] update#setState idle
+2025-12-04 12:03:35.582 [error] [UtilityProcess id: 3, type: fileWatcher, pid: 20659]: crashed with code 15 and reason 'killed'
+2025-12-04 12:03:35.599 [info] Extension host with pid 20673 exited with code: 0, signal: unknown.
+2025-12-04 13:36:56.400 [warning] No ptyHost heartbeat after 6 seconds
+2025-12-04 13:37:22.226 [info] Extension host with pid 6419 exited with code: 0, signal: unknown.
+2025-12-04 13:37:22.243 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 6482]: crashed with code 15 and reason 'killed'
+2025-12-04 13:41:55.086 [info] update#setState checking for updates
+2025-12-04 13:41:55.215 [info] update#setState idle
+2025-12-04 14:10:56.305 [info] Extension host with pid 33891 exited with code: 0, signal: unknown.

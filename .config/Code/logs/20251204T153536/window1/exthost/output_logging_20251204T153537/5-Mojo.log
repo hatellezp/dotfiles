@@ -1,0 +1,9 @@
+["INFO" - 15:35:41] 
+=============================
+Activating the Mojo Extension
+=============================
+
+["INFO" - 15:35:41] MojoContext activated.
+["INFO" - 15:35:41] Starting RPC server
+["INFO" - 15:35:41] Attempting to create the RPC server with port 12355
+["INFO" - 15:35:41] Mojo extension initialized.

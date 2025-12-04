@@ -1,0 +1,34 @@
+2025-12-04 12:03:27.555 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-12-04 12:03:27.555 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-12-04 12:03:27.555 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-12-04 12:03:27.555 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-12-04 12:03:27.576 [warning] GitHub login failed
+2025-12-04 12:03:27.645 [error] Copilot extension not found
+2025-12-04 12:03:27.648 [warning] Copilot API is undefined, unable to register context provider.
+2025-12-04 12:03:30.034 [warning] GitHub login failed
+2025-12-04 12:03:30.037 [error] Error: GitHubLoginFailed
+	at FG._authShowWarnings (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:32474)
+	at async FG.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:30347)
+	at async LV.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:26751)
+	at async KI.waitForChatEnabled (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:29370)
+	at async KI.run (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:29254)
+	at async n5.askToUpgradeAuthPermissions (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:28734): Failed to get copilot token
+2025-12-04 12:03:30.037 [error] You are not signed in to GitHub. Please sign in to use Copilot.
+2025-12-04 12:03:30.037 [info] Using the Electron fetcher.
+2025-12-04 12:03:30.037 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-12-04 12:03:30.037 [error] Error: GitHubLoginFailed
+	at FG._authShowWarnings (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:32474)
+	at async FG.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:30347)
+	at async LV.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:26751)
+	at async k6._getToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:1122:5850)
+	at async r (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:1122:5314)
+	at async k6._registerEmbeddings (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:1122:5811)
+	at async Promise.all (index 1)
+	at async Promise.allSettled (index 1)
+	at async QB.waitForActivationBlockers (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:938:1262)
+	at async /home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:938:2021
+	at async S_t (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:938:1889)
+	at async Uy.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13382)
+	at async Uy.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13345)
+	at async Uy.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:12801)
+2025-12-04 12:03:30.037 [info] activationBlocker from 'languageModelAccess' took for 2419ms

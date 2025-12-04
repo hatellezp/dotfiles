@@ -1,0 +1,1257 @@
+[2025-12-04T08:41:43.663Z] Start: Resolving Remote
+[2025-12-04T08:41:43.666Z] Setting up container: /dualdm_dev
+[2025-12-04T08:41:43.667Z] Host authority: ssh-remote+athena1
+[2025-12-04T08:41:43.670Z] Start: Loading environment from ExecServer
+[2025-12-04T08:41:43.663Z] Dev Containers 0.431.1 over Remote - SSH 0.120.0 in VS Code 1.106.3 (bf9252a2fb45be6893dd8870c0bf37e2e1766d61).
+[2025-12-04T08:41:43.677Z] Stop (7 ms): Loading environment from ExecServer
+[2025-12-04T08:41:43.678Z] Host OS: linux 6.16.7-200.fc42.x86_64
+[2025-12-04T08:41:43.678Z] Host CWD: undefined
+[2025-12-04T08:41:43.678Z] Start: Run: /bin/sh 
+[2025-12-04T08:41:43.697Z] Start: Run in host: echo ~
+[2025-12-04T08:41:43.746Z] /home/tellez
+[2025-12-04T08:41:43.747Z] 
+[2025-12-04T08:41:43.747Z] Stop (50 ms): Run in host: echo ~
+[2025-12-04T08:41:43.747Z] Start: Run in host: id -un
+[2025-12-04T08:41:43.796Z] tellez
+[2025-12-04T08:41:43.797Z] 
+[2025-12-04T08:41:43.797Z] Stop (50 ms): Run in host: id -un
+[2025-12-04T08:41:43.797Z] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'tellez' || grep -E '^tellez|^[^:]*:[^:]*:tellez:' /etc/passwd || true)
+[2025-12-04T08:41:43.848Z] Stop (51 ms): Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'tellez' || grep -E '^tellez|^[^:]*:[^:]*:tellez:' /etc/passwd || true)
+[2025-12-04T08:41:43.849Z] userEnvProbe: loginInteractiveShell (default)
+[2025-12-04T08:41:43.850Z] userEnvProbe: not found in cache
+[2025-12-04T08:41:43.852Z] userEnvProbe shell: /bin/bash
+[2025-12-04T08:41:45.856Z] Start: Run: /bin/sh 
+[2025-12-04T08:41:45.870Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:41:48.211Z] Stop (2341 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:41:48.218Z] userEnvProbe is taking longer than 2 seconds. Process not found.
+[2025-12-04T08:41:53.855Z] userEnvProbe is taking longer than 10 seconds. Avoid waiting for user input in your shell's startup scripts. Continuing.
+[2025-12-04T08:41:53.875Z] Start: Run: docker inspect --type container /dualdm_dev
+[2025-12-04T08:41:53.936Z] Stop (61 ms): Run: docker inspect --type container /dualdm_dev
+[2025-12-04T08:41:54.043Z] Start: Check Docker is running
+[2025-12-04T08:41:54.044Z] Start: Run: docker version
+[2025-12-04T08:41:54.099Z] Client: Docker Engine - Community
+ Version:           28.4.0
+ API version:       1.51
+ Go version:        go1.24.7
+ Git commit:        d8eb465
+ Built:             Wed Sep  3 21:00:00 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          28.4.0
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.7
+  Git commit:       249d679
+  Built:            Wed Sep  3 20:56:56 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.7.27
+  GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+ nvidia:
+  Version:          1.2.5
+  GitCommit:        v1.2.5-0-g59923ef
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[2025-12-04T08:41:54.100Z] Stop (56 ms): Run: docker version
+[2025-12-04T08:41:54.100Z] Stop (57 ms): Check Docker is running
+[2025-12-04T08:41:54.156Z] Running Dev Containers CLI:   set-up --container-id 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5 --container-session-data-folder /tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772 --log-level debug --log-format json --config /tmp/devcontainer-config-18f66716-02b0-42e6-ac9f-bfd228f28a5d.json --default-user-env-probe loginInteractiveShell --skip-post-create --include-configuration --include-merged-configuration
+[2025-12-04T08:41:54.156Z] Start: Checking for Dev Containers CLI
+[2025-12-04T08:41:54.202Z] Stop (46 ms): Checking for Dev Containers CLI
+[2025-12-04T08:41:54.212Z] Start: Run: /home/tellez/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node /home/tellez/.vscode-remote-containers/dist/dev-containers-cli-0.431.1/dist/spec-node/devContainersSpecCLI.js set-up --container-id 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5 --container-session-data-folder /tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772 --log-level debug --log-format json --config /tmp/devcontainer-config-18f66716-02b0-42e6-ac9f-bfd228f28a5d.json --default-user-env-probe loginInteractiveShell --skip-post-create --include-configuration --include-merged-configuration
+[2025-12-04T08:41:54.313Z] @devcontainers/cli 0.80.2. Node.js v22.20.0. linux 6.16.7-200.fc42.x86_64 x64.
+[2025-12-04T08:41:54.313Z] Start: Run: docker buildx version
+[2025-12-04T08:41:54.352Z] Stop (39 ms): Run: docker buildx version
+[2025-12-04T08:41:54.353Z] github.com/docker/buildx v0.27.0 bac71de
+[2025-12-04T08:41:54.353Z] 
+[2025-12-04T08:41:54.353Z] Start: Run: docker -v
+[2025-12-04T08:41:54.361Z] Stop (8 ms): Run: docker -v
+[2025-12-04T08:41:54.362Z] Start: Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.372Z] Stop (10 ms): Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.372Z] Start: Inspecting container
+[2025-12-04T08:41:54.373Z] Start: Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.382Z] Stop (9 ms): Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.382Z] Stop (10 ms): Inspecting container
+[2025-12-04T08:41:54.382Z] Start: Run in container: /bin/sh
+[2025-12-04T08:41:54.384Z] Start: Run in container: uname -m
+[2025-12-04T08:41:54.422Z] x86_64
+[2025-12-04T08:41:54.422Z] 
+[2025-12-04T08:41:54.422Z] Stop (38 ms): Run in container: uname -m
+[2025-12-04T08:41:54.422Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2025-12-04T08:41:54.423Z] PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+[2025-12-04T08:41:54.423Z] 
+[2025-12-04T08:41:54.423Z] Stop (1 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2025-12-04T08:41:54.423Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd '10109' || grep -E '^10109|^[^:]*:[^:]*:10109:' /etc/passwd || true)
+[2025-12-04T08:41:54.425Z] Stop (2 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd '10109' || grep -E '^10109|^[^:]*:[^:]*:10109:' /etc/passwd || true)
+[2025-12-04T08:41:54.425Z] Start: Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[2025-12-04T08:41:54.426Z] 
+[2025-12-04T08:41:54.426Z] 
+[2025-12-04T08:41:54.426Z] Stop (1 ms): Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[2025-12-04T08:41:54.426Z] Start: Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[2025-12-04T08:41:54.426Z] 
+[2025-12-04T08:41:54.426Z] 
+[2025-12-04T08:41:54.426Z] Stop (0 ms): Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[2025-12-04T08:41:54.430Z] Stop (218 ms): Run: /home/tellez/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node /home/tellez/.vscode-remote-containers/dist/dev-containers-cli-0.431.1/dist/spec-node/devContainersSpecCLI.js set-up --container-id 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5 --container-session-data-folder /tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772 --log-level debug --log-format json --config /tmp/devcontainer-config-18f66716-02b0-42e6-ac9f-bfd228f28a5d.json --default-user-env-probe loginInteractiveShell --skip-post-create --include-configuration --include-merged-configuration
+[2025-12-04T08:41:54.431Z] Start: Inspecting container
+[2025-12-04T08:41:54.431Z] Start: Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.486Z] Stop (55 ms): Run: docker inspect --type container 5aaee50755c9772d2b3fd6942e3759680c80198ab920cbc81cc6a3f3783775f5
+[2025-12-04T08:41:54.486Z] Stop (55 ms): Inspecting container
+[2025-12-04T08:41:54.492Z] Start: Run in container: /bin/sh
+[2025-12-04T08:41:54.506Z] Start: Run in container: uname -m
+[2025-12-04T08:41:54.603Z] x86_64
+[2025-12-04T08:41:54.603Z] 
+[2025-12-04T08:41:54.604Z] Stop (98 ms): Run in container: uname -m
+[2025-12-04T08:41:54.604Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2025-12-04T08:41:54.653Z] PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+[2025-12-04T08:41:54.654Z] 
+[2025-12-04T08:41:54.654Z] Stop (50 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2025-12-04T08:41:54.654Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd '10109' || grep -E '^10109|^[^:]*:[^:]*:10109:' /etc/passwd || true)
+[2025-12-04T08:41:54.702Z] Stop (48 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd '10109' || grep -E '^10109|^[^:]*:[^:]*:10109:' /etc/passwd || true)
+[2025-12-04T08:41:54.704Z] Start: Run in container: test -d '/home/dev/.vscode-server'
+[2025-12-04T08:41:54.753Z] 
+[2025-12-04T08:41:54.753Z] 
+[2025-12-04T08:41:54.753Z] Stop (49 ms): Run in container: test -d '/home/dev/.vscode-server'
+[2025-12-04T08:41:54.753Z] Start: Run in container: test ! -f '/home/dev/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/dev/.vscode-server/data/Machine' && { > '/home/dev/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2025-12-04T08:41:54.804Z] 
+[2025-12-04T08:41:54.804Z] 
+[2025-12-04T08:41:54.805Z] Exit code 1
+[2025-12-04T08:41:54.805Z] Stop (52 ms): Run in container: test ! -f '/home/dev/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/dev/.vscode-server/data/Machine' && { > '/home/dev/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2025-12-04T08:41:54.805Z] Start: Run in container: cat /home/dev/.vscode-server/data/Machine/settings.json
+[2025-12-04T08:41:54.851Z] {
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 22.04.5 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `git`, `curl`, `wget`, `ps`, `top`, `find`, `grep`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	],
+	"search.showLineNumbers": true,
+	"zenMode.hideLineNumbers": false
+}
+[2025-12-04T08:41:54.852Z] 
+[2025-12-04T08:41:54.852Z] Stop (47 ms): Run in container: cat /home/dev/.vscode-server/data/Machine/settings.json
+[2025-12-04T08:41:54.852Z] Start: Run in container: test ! -f '/home/dev/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/dev/.vscode-server/data/Machine' && { > '/home/dev/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2025-12-04T08:41:54.904Z] 
+[2025-12-04T08:41:54.904Z] 
+[2025-12-04T08:41:54.904Z] Exit code 1
+[2025-12-04T08:41:54.905Z] Stop (53 ms): Run in container: test ! -f '/home/dev/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/dev/.vscode-server/data/Machine' && { > '/home/dev/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2025-12-04T08:41:54.906Z] Start: Run in container: test -d '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:54.957Z] 
+[2025-12-04T08:41:54.957Z] 
+[2025-12-04T08:41:54.957Z] Stop (51 ms): Run in container: test -d '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:54.958Z] Start: Run in container: test -x '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/helpers/check-requirements.sh'
+[2025-12-04T08:41:55.010Z] 
+[2025-12-04T08:41:55.010Z] 
+[2025-12-04T08:41:55.011Z] Stop (53 ms): Run in container: test -x '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/helpers/check-requirements.sh'
+[2025-12-04T08:41:55.011Z] Start: Run in container: '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/helpers/check-requirements.sh'
+[2025-12-04T08:41:55.060Z] 
+[2025-12-04T08:41:55.061Z] 
+[2025-12-04T08:41:55.061Z] Stop (50 ms): Run in container: '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/helpers/check-requirements.sh'
+[2025-12-04T08:41:55.061Z] Start: Launching Dev Containers helper.
+[2025-12-04T08:41:55.062Z] ssh-agent: SSH_AUTH_SOCK not set on remote host.
+[2025-12-04T08:41:55.062Z] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.sock) forwarded to local host (/run/user/1000/keyring/ssh).
+[2025-12-04T08:41:55.062Z] X11 forwarding: DISPLAY not set on remote host.
+[2025-12-04T08:41:55.062Z] Start: Run in container: test -e /tmp/.X11-unix/X0
+[2025-12-04T08:41:55.109Z] 
+[2025-12-04T08:41:55.109Z] 
+[2025-12-04T08:41:55.109Z] Stop (47 ms): Run in container: test -e /tmp/.X11-unix/X0
+[2025-12-04T08:41:55.110Z] Start: Run in container: test -e /tmp/.X11-unix/X1
+[2025-12-04T08:41:55.157Z] 
+[2025-12-04T08:41:55.157Z] 
+[2025-12-04T08:41:55.157Z] Stop (47 ms): Run in container: test -e /tmp/.X11-unix/X1
+[2025-12-04T08:41:55.157Z] Start: Run in container: test -e /tmp/.X11-unix/X2
+[2025-12-04T08:41:55.209Z] 
+[2025-12-04T08:41:55.209Z] 
+[2025-12-04T08:41:55.209Z] Stop (52 ms): Run in container: test -e /tmp/.X11-unix/X2
+[2025-12-04T08:41:55.209Z] Start: Run in container: test -e /tmp/.X11-unix/X3
+[2025-12-04T08:41:55.260Z] 
+[2025-12-04T08:41:55.260Z] 
+[2025-12-04T08:41:55.260Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X3
+[2025-12-04T08:41:55.260Z] Start: Run in container: test -e /tmp/.X11-unix/X4
+[2025-12-04T08:41:55.309Z] 
+[2025-12-04T08:41:55.309Z] 
+[2025-12-04T08:41:55.309Z] Stop (49 ms): Run in container: test -e /tmp/.X11-unix/X4
+[2025-12-04T08:41:55.309Z] Start: Run in container: test -e /tmp/.X11-unix/X5
+[2025-12-04T08:41:55.456Z] 
+[2025-12-04T08:41:55.456Z] 
+[2025-12-04T08:41:55.457Z] Stop (148 ms): Run in container: test -e /tmp/.X11-unix/X5
+[2025-12-04T08:41:55.457Z] Start: Run in container: test -e /tmp/.X11-unix/X6
+[2025-12-04T08:41:55.465Z] 
+[2025-12-04T08:41:55.465Z] 
+[2025-12-04T08:41:55.466Z] Stop (9 ms): Run in container: test -e /tmp/.X11-unix/X6
+[2025-12-04T08:41:55.466Z] Start: Run in container: test -e /tmp/.X11-unix/X7
+[2025-12-04T08:41:55.516Z] 
+[2025-12-04T08:41:55.516Z] 
+[2025-12-04T08:41:55.516Z] Stop (50 ms): Run in container: test -e /tmp/.X11-unix/X7
+[2025-12-04T08:41:55.517Z] Start: Run in container: test -e /tmp/.X11-unix/X8
+[2025-12-04T08:41:55.659Z] 
+[2025-12-04T08:41:55.660Z] 
+[2025-12-04T08:41:55.660Z] Stop (143 ms): Run in container: test -e /tmp/.X11-unix/X8
+[2025-12-04T08:41:55.660Z] Start: Run in container: test -e /tmp/.X11-unix/X9
+[2025-12-04T08:41:55.669Z] 
+[2025-12-04T08:41:55.669Z] 
+[2025-12-04T08:41:55.669Z] Stop (9 ms): Run in container: test -e /tmp/.X11-unix/X9
+[2025-12-04T08:41:55.669Z] Start: Run in container: test -e /tmp/.X11-unix/X10
+[2025-12-04T08:41:55.721Z] 
+[2025-12-04T08:41:55.721Z] 
+[2025-12-04T08:41:55.722Z] Stop (53 ms): Run in container: test -e /tmp/.X11-unix/X10
+[2025-12-04T08:41:55.722Z] Start: Run in container: test -e /tmp/.X11-unix/X11
+[2025-12-04T08:41:55.861Z] 
+[2025-12-04T08:41:55.861Z] 
+[2025-12-04T08:41:55.862Z] Stop (140 ms): Run in container: test -e /tmp/.X11-unix/X11
+[2025-12-04T08:41:55.862Z] Start: Run in container: test -e /tmp/.X11-unix/X12
+[2025-12-04T08:41:55.870Z] 
+[2025-12-04T08:41:55.871Z] 
+[2025-12-04T08:41:55.871Z] Stop (9 ms): Run in container: test -e /tmp/.X11-unix/X12
+[2025-12-04T08:41:55.872Z] Start: Run in container: test -e /tmp/.X11-unix/X13
+[2025-12-04T08:41:55.947Z] 
+[2025-12-04T08:41:55.948Z] 
+[2025-12-04T08:41:55.948Z] Stop (76 ms): Run in container: test -e /tmp/.X11-unix/X13
+[2025-12-04T08:41:55.949Z] Start: Run in container: test -e /tmp/.X11-unix/X14
+[2025-12-04T08:41:56.019Z] 
+[2025-12-04T08:41:56.020Z] 
+[2025-12-04T08:41:56.020Z] Stop (71 ms): Run in container: test -e /tmp/.X11-unix/X14
+[2025-12-04T08:41:56.021Z] Start: Run in container: test -e /tmp/.X11-unix/X15
+[2025-12-04T08:41:56.117Z] 
+[2025-12-04T08:41:56.118Z] 
+[2025-12-04T08:41:56.118Z] Stop (97 ms): Run in container: test -e /tmp/.X11-unix/X15
+[2025-12-04T08:41:56.119Z] Start: Run in container: test -e /tmp/.X11-unix/X16
+[2025-12-04T08:41:56.129Z] 
+[2025-12-04T08:41:56.130Z] 
+[2025-12-04T08:41:56.130Z] Stop (11 ms): Run in container: test -e /tmp/.X11-unix/X16
+[2025-12-04T08:41:56.130Z] Start: Run in container: test -e /tmp/.X11-unix/X17
+[2025-12-04T08:41:56.224Z] 
+[2025-12-04T08:41:56.225Z] 
+[2025-12-04T08:41:56.225Z] Stop (95 ms): Run in container: test -e /tmp/.X11-unix/X17
+[2025-12-04T08:41:56.226Z] Start: Run in container: test -e /tmp/.X11-unix/X18
+[2025-12-04T08:41:56.234Z] 
+[2025-12-04T08:41:56.234Z] 
+[2025-12-04T08:41:56.234Z] Stop (8 ms): Run in container: test -e /tmp/.X11-unix/X18
+[2025-12-04T08:41:56.234Z] Start: Run in container: test -e /tmp/.X11-unix/X19
+[2025-12-04T08:41:56.357Z] 
+[2025-12-04T08:41:56.358Z] 
+[2025-12-04T08:41:56.358Z] Stop (124 ms): Run in container: test -e /tmp/.X11-unix/X19
+[2025-12-04T08:41:56.358Z] Start: Run in container: test -e /tmp/.X11-unix/X20
+[2025-12-04T08:41:56.367Z] 
+[2025-12-04T08:41:56.367Z] 
+[2025-12-04T08:41:56.368Z] Stop (10 ms): Run in container: test -e /tmp/.X11-unix/X20
+[2025-12-04T08:41:56.368Z] Start: Run in container: test -e /tmp/.X11-unix/X21
+[2025-12-04T08:41:56.444Z] 
+[2025-12-04T08:41:56.444Z] 
+[2025-12-04T08:41:56.445Z] Stop (77 ms): Run in container: test -e /tmp/.X11-unix/X21
+[2025-12-04T08:41:56.445Z] Start: Run in container: test -e /tmp/.X11-unix/X22
+[2025-12-04T08:41:56.527Z] 
+[2025-12-04T08:41:56.527Z] 
+[2025-12-04T08:41:56.527Z] Stop (82 ms): Run in container: test -e /tmp/.X11-unix/X22
+[2025-12-04T08:41:56.527Z] Start: Run in container: test -e /tmp/.X11-unix/X23
+[2025-12-04T08:41:56.535Z] 
+[2025-12-04T08:41:56.535Z] 
+[2025-12-04T08:41:56.535Z] Stop (8 ms): Run in container: test -e /tmp/.X11-unix/X23
+[2025-12-04T08:41:56.535Z] Start: Run in container: test -e /tmp/.X11-unix/X24
+[2025-12-04T08:41:56.633Z] 
+[2025-12-04T08:41:56.633Z] 
+[2025-12-04T08:41:56.633Z] Stop (98 ms): Run in container: test -e /tmp/.X11-unix/X24
+[2025-12-04T08:41:56.633Z] Start: Run in container: test -e /tmp/.X11-unix/X25
+[2025-12-04T08:41:56.641Z] 
+[2025-12-04T08:41:56.642Z] 
+[2025-12-04T08:41:56.642Z] Stop (9 ms): Run in container: test -e /tmp/.X11-unix/X25
+[2025-12-04T08:41:56.642Z] Start: Run in container: test -e /tmp/.X11-unix/X26
+[2025-12-04T08:41:56.736Z] 
+[2025-12-04T08:41:56.737Z] 
+[2025-12-04T08:41:56.737Z] Stop (95 ms): Run in container: test -e /tmp/.X11-unix/X26
+[2025-12-04T08:41:56.737Z] Start: Run in container: test -e /tmp/.X11-unix/X27
+[2025-12-04T08:41:56.744Z] 
+[2025-12-04T08:41:56.744Z] 
+[2025-12-04T08:41:56.744Z] Stop (7 ms): Run in container: test -e /tmp/.X11-unix/X27
+[2025-12-04T08:41:56.745Z] Start: Run in container: test -e /tmp/.X11-unix/X28
+[2025-12-04T08:41:56.880Z] 
+[2025-12-04T08:41:56.881Z] 
+[2025-12-04T08:41:56.881Z] Stop (136 ms): Run in container: test -e /tmp/.X11-unix/X28
+[2025-12-04T08:41:56.882Z] Start: Run in container: test -e /tmp/.X11-unix/X29
+[2025-12-04T08:41:56.890Z] 
+[2025-12-04T08:41:56.891Z] 
+[2025-12-04T08:41:56.891Z] Stop (9 ms): Run in container: test -e /tmp/.X11-unix/X29
+[2025-12-04T08:41:56.892Z] Start: Run in container: test -e /tmp/.X11-unix/X30
+[2025-12-04T08:41:56.977Z] 
+[2025-12-04T08:41:56.978Z] 
+[2025-12-04T08:41:56.978Z] Stop (86 ms): Run in container: test -e /tmp/.X11-unix/X30
+[2025-12-04T08:41:56.979Z] Start: Run in container: test -e /tmp/.X11-unix/X31
+[2025-12-04T08:41:57.044Z] 
+[2025-12-04T08:41:57.045Z] 
+[2025-12-04T08:41:57.045Z] Stop (66 ms): Run in container: test -e /tmp/.X11-unix/X31
+[2025-12-04T08:41:57.046Z] Start: Run in container: test -e /tmp/.X11-unix/X32
+[2025-12-04T08:41:57.182Z] 
+[2025-12-04T08:41:57.182Z] 
+[2025-12-04T08:41:57.182Z] Stop (136 ms): Run in container: test -e /tmp/.X11-unix/X32
+[2025-12-04T08:41:57.182Z] Start: Run in container: test -e /tmp/.X11-unix/X33
+[2025-12-04T08:41:57.202Z] 
+[2025-12-04T08:41:57.202Z] 
+[2025-12-04T08:41:57.202Z] Stop (20 ms): Run in container: test -e /tmp/.X11-unix/X33
+[2025-12-04T08:41:57.202Z] Start: Run in container: test -e /tmp/.X11-unix/X34
+[2025-12-04T08:41:57.345Z] 
+[2025-12-04T08:41:57.346Z] 
+[2025-12-04T08:41:57.346Z] Stop (144 ms): Run in container: test -e /tmp/.X11-unix/X34
+[2025-12-04T08:41:57.346Z] Start: Run in container: test -e /tmp/.X11-unix/X35
+[2025-12-04T08:41:57.355Z] 
+[2025-12-04T08:41:57.356Z] 
+[2025-12-04T08:41:57.356Z] Stop (10 ms): Run in container: test -e /tmp/.X11-unix/X35
+[2025-12-04T08:41:57.356Z] Start: Run in container: test -e /tmp/.X11-unix/X36
+[2025-12-04T08:41:57.488Z] 
+[2025-12-04T08:41:57.488Z] 
+[2025-12-04T08:41:57.488Z] Stop (132 ms): Run in container: test -e /tmp/.X11-unix/X36
+[2025-12-04T08:41:57.488Z] Start: Run in container: test -e /tmp/.X11-unix/X37
+[2025-12-04T08:41:57.497Z] 
+[2025-12-04T08:41:57.498Z] 
+[2025-12-04T08:41:57.498Z] Stop (10 ms): Run in container: test -e /tmp/.X11-unix/X37
+[2025-12-04T08:41:57.498Z] Start: Run in container: test -e /tmp/.X11-unix/X38
+[2025-12-04T08:41:57.555Z] 
+[2025-12-04T08:41:57.556Z] 
+[2025-12-04T08:41:57.556Z] Stop (58 ms): Run in container: test -e /tmp/.X11-unix/X38
+[2025-12-04T08:41:57.556Z] Start: Run in container: test -e /tmp/.X11-unix/X39
+[2025-12-04T08:41:57.624Z] 
+[2025-12-04T08:41:57.624Z] 
+[2025-12-04T08:41:57.624Z] Stop (68 ms): Run in container: test -e /tmp/.X11-unix/X39
+[2025-12-04T08:41:57.624Z] Start: Run in container: test -e /tmp/.X11-unix/X40
+[2025-12-04T08:41:57.675Z] 
+[2025-12-04T08:41:57.675Z] 
+[2025-12-04T08:41:57.675Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X40
+[2025-12-04T08:41:57.675Z] Start: Run in container: test -e /tmp/.X11-unix/X41
+[2025-12-04T08:41:57.725Z] 
+[2025-12-04T08:41:57.725Z] 
+[2025-12-04T08:41:57.725Z] Stop (50 ms): Run in container: test -e /tmp/.X11-unix/X41
+[2025-12-04T08:41:57.725Z] Start: Run in container: test -e /tmp/.X11-unix/X42
+[2025-12-04T08:41:57.777Z] 
+[2025-12-04T08:41:57.777Z] 
+[2025-12-04T08:41:57.778Z] Stop (53 ms): Run in container: test -e /tmp/.X11-unix/X42
+[2025-12-04T08:41:57.778Z] Start: Run in container: test -e /tmp/.X11-unix/X43
+[2025-12-04T08:41:57.828Z] 
+[2025-12-04T08:41:57.828Z] 
+[2025-12-04T08:41:57.829Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X43
+[2025-12-04T08:41:57.829Z] Start: Run in container: test -e /tmp/.X11-unix/X44
+[2025-12-04T08:41:57.879Z] 
+[2025-12-04T08:41:57.879Z] 
+[2025-12-04T08:41:57.880Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X44
+[2025-12-04T08:41:57.880Z] Start: Run in container: test -e /tmp/.X11-unix/X45
+[2025-12-04T08:41:57.931Z] 
+[2025-12-04T08:41:57.932Z] 
+[2025-12-04T08:41:57.932Z] Stop (52 ms): Run in container: test -e /tmp/.X11-unix/X45
+[2025-12-04T08:41:57.932Z] Start: Run in container: test -e /tmp/.X11-unix/X46
+[2025-12-04T08:41:57.982Z] 
+[2025-12-04T08:41:57.983Z] 
+[2025-12-04T08:41:57.983Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X46
+[2025-12-04T08:41:57.983Z] Start: Run in container: test -e /tmp/.X11-unix/X47
+[2025-12-04T08:41:58.033Z] 
+[2025-12-04T08:41:58.033Z] 
+[2025-12-04T08:41:58.033Z] Stop (50 ms): Run in container: test -e /tmp/.X11-unix/X47
+[2025-12-04T08:41:58.034Z] Start: Run in container: test -e /tmp/.X11-unix/X48
+[2025-12-04T08:41:58.081Z] 
+[2025-12-04T08:41:58.082Z] 
+[2025-12-04T08:41:58.082Z] Stop (48 ms): Run in container: test -e /tmp/.X11-unix/X48
+[2025-12-04T08:41:58.083Z] Start: Run in container: test -e /tmp/.X11-unix/X49
+[2025-12-04T08:41:58.132Z] 
+[2025-12-04T08:41:58.132Z] 
+[2025-12-04T08:41:58.132Z] Stop (49 ms): Run in container: test -e /tmp/.X11-unix/X49
+[2025-12-04T08:41:58.133Z] Start: Run in container: test -e /tmp/.X11-unix/X50
+[2025-12-04T08:41:58.183Z] 
+[2025-12-04T08:41:58.184Z] 
+[2025-12-04T08:41:58.184Z] Stop (51 ms): Run in container: test -e /tmp/.X11-unix/X50
+[2025-12-04T08:41:58.184Z] Start: Run in container: test -e /tmp/.X11-unix/X51
+[2025-12-04T08:41:58.236Z] 
+[2025-12-04T08:41:58.236Z] 
+[2025-12-04T08:41:58.236Z] Exit code 1
+[2025-12-04T08:41:58.237Z] Stop (53 ms): Run in container: test -e /tmp/.X11-unix/X51
+[2025-12-04T08:41:58.237Z] Start: Run in container: mkdir -p '/tmp/.X11-unix'
+[2025-12-04T08:41:58.286Z] 
+[2025-12-04T08:41:58.286Z] 
+[2025-12-04T08:41:58.286Z] Stop (49 ms): Run in container: mkdir -p '/tmp/.X11-unix'
+[2025-12-04T08:41:58.287Z] X11 forwarding: DISPLAY in container (:51) forwarded to local host (:1).
+[2025-12-04T08:41:58.287Z] Start: Run in container: gpgconf --list-dirs
+[2025-12-04T08:41:58.338Z] 
+[2025-12-04T08:41:58.338Z] /bin/sh: 64: gpgconf: not found
+[2025-12-04T08:41:58.338Z] Exit code 127
+[2025-12-04T08:41:58.339Z] Stop (52 ms): Run in container: gpgconf --list-dirs
+[2025-12-04T08:41:58.339Z] gpg-agent: No agent-socket found in container.
+[2025-12-04T08:41:58.340Z] Start: Run in container: (command -v 'docker' || command -v 'oras' || command -v 'skopeo') >/dev/null 2>&1
+[2025-12-04T08:41:58.390Z] 
+[2025-12-04T08:41:58.391Z] 
+[2025-12-04T08:41:58.391Z] Exit code 127
+[2025-12-04T08:41:58.391Z] Stop (51 ms): Run in container: (command -v 'docker' || command -v 'oras' || command -v 'skopeo') >/dev/null 2>&1
+[2025-12-04T08:41:58.393Z] Start: Run in container: /bin/sh
+[2025-12-04T08:41:58.393Z] Stop (3332 ms): Launching Dev Containers helper.
+[2025-12-04T08:41:58.394Z] userEnvProbe: loginInteractiveShell (default)
+[2025-12-04T08:41:58.394Z] Start: Run in container: test -f '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772/env-loginInteractiveShell.json'
+[2025-12-04T08:41:58.419Z] 
+[2025-12-04T08:41:58.419Z] 
+[2025-12-04T08:41:58.419Z] Exit code 1
+[2025-12-04T08:41:58.419Z] Stop (25 ms): Run in container: test -f '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772/env-loginInteractiveShell.json'
+[2025-12-04T08:41:58.419Z] Start: Run in container: # Test for /home/dev/.ssh/known_hosts and ssh
+[2025-12-04T08:41:58.420Z] userEnvProbe: not found in cache
+[2025-12-04T08:41:58.420Z] userEnvProbe shell: /usr/bin/zsh
+[2025-12-04T08:41:58.427Z] Start: Run in container: echo ~
+[2025-12-04T08:41:58.435Z] ssh not found
+[2025-12-04T08:41:58.435Z] 
+[2025-12-04T08:41:58.435Z] Exit code 1
+[2025-12-04T08:41:58.436Z] Stop (17 ms): Run in container: # Test for /home/dev/.ssh/known_hosts and ssh
+[2025-12-04T08:41:58.436Z] Start: Run in container: /bin/sh
+[2025-12-04T08:41:58.449Z] Start: Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node /tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js git-credential-helper $*; }; f' || true
+[2025-12-04T08:41:58.518Z] /home/dev
+[2025-12-04T08:41:58.518Z] 
+[2025-12-04T08:41:58.519Z] Stop (92 ms): Run in container: echo ~
+[2025-12-04T08:41:58.519Z] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js' >/tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js
+[2025-12-04T08:41:58.519Z] 
+[2025-12-04T08:41:58.519Z] 
+[2025-12-04T08:41:58.519Z] Stop (70 ms): Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node /tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js git-credential-helper $*; }; f' || true
+[2025-12-04T08:41:58.519Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:41:58.535Z] 
+[2025-12-04T08:41:58.535Z] 
+[2025-12-04T08:41:58.536Z] Stop (17 ms): Run in container: cat <<'EOF-/tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js' >/tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js
+[2025-12-04T08:41:58.536Z] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js' >/tmp/vscode-remote-containers-server-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js_1764837718536
+[2025-12-04T08:41:58.595Z] 
+[2025-12-04T08:41:58.595Z] 
+[2025-12-04T08:41:58.595Z] Stop (59 ms): Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js' >/tmp/vscode-remote-containers-server-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js_1764837718536
+[2025-12-04T08:41:58.750Z] userEnvProbe PATHs:
+Probe:     '/usr/local/nvidia/bin:/usr/local/cuda/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/workspace/src'
+Container: '/usr/local/nvidia/bin:/usr/local/cuda/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+Merged:    '/usr/local/nvidia/bin:/usr/local/cuda/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/workspace/src'
+[2025-12-04T08:41:59.286Z] Stop (767 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2025-12-04T08:41:59.287Z] Start: Run in container: mkdir -p '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772' && cat > '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772/env-loginInteractiveShell.json' << 'envJSON'
+[2025-12-04T08:41:59.339Z] 
+[2025-12-04T08:41:59.340Z] 
+[2025-12-04T08:41:59.340Z] Stop (53 ms): Run in container: mkdir -p '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772' && cat > '/tmp/devcontainers-39959e3a-1e83-4331-b4d4-a72499c9a89d1764837699772/env-loginInteractiveShell.json' << 'envJSON'
+[2025-12-04T08:41:59.340Z] Start: Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:41:59.393Z] Stop (53 ms): Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:41:59.397Z] Start: Run in container: readlink -f '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:59.445Z] /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61
+[2025-12-04T08:41:59.445Z] 
+[2025-12-04T08:41:59.446Z] Stop (49 ms): Run in container: readlink -f '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:59.446Z] Extension host agent is already running.
+[2025-12-04T08:41:59.446Z] Start: Run in container: cat '/home/dev/.vscode-server/data/Machine/.devport-bf9252a2fb45be6893dd8870c0bf37e2e1766d61' 2>/dev/null
+[2025-12-04T08:41:59.496Z] 40317
+[2025-12-04T08:41:59.496Z] 
+[2025-12-04T08:41:59.496Z] Stop (50 ms): Run in container: cat '/home/dev/.vscode-server/data/Machine/.devport-bf9252a2fb45be6893dd8870c0bf37e2e1766d61' 2>/dev/null
+[2025-12-04T08:41:59.497Z] Start: Run in container: cat '/home/dev/.vscode-server/data/Machine/.connection-token-bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:59.546Z] 11566116-f40f-4240-b3a9-77f597afb7ed
+[2025-12-04T08:41:59.546Z] 
+[2025-12-04T08:41:59.546Z] Stop (49 ms): Run in container: cat '/home/dev/.vscode-server/data/Machine/.connection-token-bf9252a2fb45be6893dd8870c0bf37e2e1766d61'
+[2025-12-04T08:41:59.547Z] Port forwarding for container port 40317 starts listening on local port.
+[2025-12-04T08:41:59.548Z] Port forwarding local port 40317 to container port 40317
+[2025-12-04T08:41:59.549Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:41:59.549Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:41:59.550Z] Stop (15887 ms): Resolving Remote
+[2025-12-04T08:41:59.552Z] Initializing configuration support...
+[2025-12-04T08:41:59.552Z] Internal initialization of dev container support package...
+[2025-12-04T08:41:59.558Z] Port forwarding connection from 46326 > 40317 > 40317 in the container.
+[2025-12-04T08:41:59.558Z] Start: Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node -e 
+[2025-12-04T08:41:59.581Z] Start: Run in container: # Test for /home/dev/.gitconfig and git
+[2025-12-04T08:41:59.600Z] [credential]
+/home/dev/.gitconfig exists
+[2025-12-04T08:41:59.600Z] 
+[2025-12-04T08:41:59.600Z] Exit code 1
+[2025-12-04T08:41:59.600Z] Stop (19 ms): Run in container: # Test for /home/dev/.gitconfig and git
+[2025-12-04T08:41:59.608Z] Start: Run in container: command -v git >/dev/null 2>&1 && git config --global --replace-all credential.helper '!f() { /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node /tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js git-credential-helper $*; }; f' || true
+[2025-12-04T08:41:59.659Z] 
+[2025-12-04T08:41:59.660Z] 
+[2025-12-04T08:41:59.660Z] Stop (52 ms): Run in container: command -v git >/dev/null 2>&1 && git config --global --replace-all credential.helper '!f() { /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node /tmp/vscode-remote-containers-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.js git-credential-helper $*; }; f' || true
+[2025-12-04T08:41:59.660Z] Port forwarding 46326 > 40317 > 40317 stderr: Connection established
+[2025-12-04T08:41:59.674Z] Port forwarding connection from 46334 > 40317 > 40317 in the container.
+[2025-12-04T08:41:59.674Z] Start: Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node -e 
+[2025-12-04T08:41:59.762Z] Port forwarding 46334 > 40317 > 40317 stderr: Connection established
+[2025-12-04T08:42:02.403Z] Start: Run in container: cat /proc/3101235/environ
+[2025-12-04T08:42:02.454Z] Stop (51 ms): Run in container: cat /proc/3101235/environ
+[2025-12-04T08:42:02.455Z] Start: Run in container: rm '/tmp/vscode-remote-containers-ipc-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock' && ln -s '/tmp/vscode-remote-containers-ipc-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.sock' '/tmp/vscode-remote-containers-ipc-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock'
+[2025-12-04T08:42:02.488Z] 
+[2025-12-04T08:42:02.488Z] 
+[2025-12-04T08:42:02.488Z] Stop (33 ms): Run in container: rm '/tmp/vscode-remote-containers-ipc-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock' && ln -s '/tmp/vscode-remote-containers-ipc-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.sock' '/tmp/vscode-remote-containers-ipc-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock'
+[2025-12-04T08:42:02.488Z] Start: Run in container: rm '/tmp/vscode-ssh-auth-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock' && ln -s '/tmp/vscode-ssh-auth-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.sock' '/tmp/vscode-ssh-auth-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock'
+[2025-12-04T08:42:02.517Z] 
+[2025-12-04T08:42:02.517Z] 
+[2025-12-04T08:42:02.517Z] Stop (29 ms): Run in container: rm '/tmp/vscode-ssh-auth-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock' && ln -s '/tmp/vscode-ssh-auth-e3a290b4-5d5f-4ef5-a2aa-e093c4e5fda5.sock' '/tmp/vscode-ssh-auth-fab4c222-5383-4bd7-86ac-26d34a3f3e68.sock'
+[2025-12-04T08:42:02.518Z] Start: Run in container: rm '/tmp/.X11-unix/X47' && ln -s '/tmp/.X11-unix/X51' '/tmp/.X11-unix/X47'
+[2025-12-04T08:42:02.556Z] 
+[2025-12-04T08:42:02.556Z] 
+[2025-12-04T08:42:02.556Z] Stop (38 ms): Run in container: rm '/tmp/.X11-unix/X47' && ln -s '/tmp/.X11-unix/X51' '/tmp/.X11-unix/X47'
+[2025-12-04T08:42:04.048Z] Start: Run in container: cat /proc/3413344/environ
+[2025-12-04T08:42:04.095Z] Stop (47 ms): Run in container: cat /proc/3413344/environ
+[2025-12-04T08:42:05.694Z] Stop (6145 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:42:05.695Z] Start: Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:42:05.759Z] Stop (64 ms): Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:42:05.762Z] Start: Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/code-server --server-data-dir /home/dev/.vscode-server --telemetry-level all --list-extensions
+[2025-12-04T08:42:05.991Z] Stop (229 ms): Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/code-server --server-data-dir /home/dev/.vscode-server --telemetry-level all --list-extensions
+[2025-12-04T08:42:05.992Z] codeium.codeium
+codeium.windsurfpyright
+github.copilot
+github.copilot-chat
+ms-azuretools.vscode-containers
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+openai.chatgpt
+tamasfe.even-better-toml
+[2025-12-04T08:42:05.992Z] 
+[2025-12-04T08:42:05.994Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:42:07.115Z] Stop (1121 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:42:07.115Z] Start: Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:42:07.163Z] Stop (48 ms): Run in container: cat '/home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/product.json'
+[2025-12-04T08:42:07.165Z] Start: Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/code-server --server-data-dir /home/dev/.vscode-server --telemetry-level all --list-extensions
+[2025-12-04T08:42:07.378Z] Stop (213 ms): Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/bin/code-server --server-data-dir /home/dev/.vscode-server --telemetry-level all --list-extensions
+[2025-12-04T08:42:07.379Z] codeium.codeium
+codeium.windsurfpyright
+github.copilot
+github.copilot-chat
+ms-azuretools.vscode-containers
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+openai.chatgpt
+tamasfe.even-better-toml
+[2025-12-04T08:42:07.380Z] 
+[2025-12-04T08:42:07.384Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:42:59.978Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:42:59.979Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:43:07.951Z] Stop (60567 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:43:07.952Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:44:00.479Z] Stop (60500 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:44:00.480Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:44:08.406Z] Stop (60454 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:44:08.407Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:45:00.970Z] Stop (60490 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:45:00.971Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:45:08.887Z] Stop (60480 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:45:08.888Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:46:01.458Z] Stop (60487 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:46:01.459Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:46:09.408Z] Stop (60520 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:46:09.410Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:47:01.940Z] Stop (60481 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:47:01.941Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:47:09.876Z] Stop (60466 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:47:09.877Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:48:02.332Z] Stop (60391 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:48:02.333Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:48:10.342Z] Stop (60465 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:48:10.343Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:49:02.768Z] Stop (60435 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:49:02.769Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:49:10.727Z] Stop (60384 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:49:10.728Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:50:03.124Z] Stop (60355 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:50:03.125Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:50:11.084Z] Stop (60356 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:50:11.084Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:51:03.526Z] Stop (60401 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:51:03.527Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:51:11.447Z] Stop (60363 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:51:11.448Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:52:03.930Z] Stop (60403 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:52:03.931Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:52:11.837Z] Stop (60389 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:52:11.838Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:53:04.342Z] Stop (60411 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:53:04.343Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:53:12.252Z] Stop (60414 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:53:12.253Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:54:04.772Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:54:04.772Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:54:12.844Z] Stop (60591 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:54:12.845Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:55:05.269Z] Stop (60497 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:55:05.271Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:55:13.364Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:55:13.365Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:56:05.710Z] Stop (60439 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:56:05.710Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:56:13.827Z] Stop (60462 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:56:13.827Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:57:06.210Z] Stop (60500 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:57:06.211Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:57:14.402Z] Stop (60575 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:57:14.403Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:58:06.729Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:58:06.730Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:58:14.765Z] Stop (60362 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:58:14.766Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:59:07.145Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:59:07.147Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T08:59:15.174Z] Stop (60408 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T08:59:15.175Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:00:07.563Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:00:07.564Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:00:15.652Z] Stop (60477 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:00:15.653Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:01:08.078Z] Stop (60514 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:01:08.079Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:01:16.171Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:01:16.172Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:02:08.549Z] Stop (60470 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:02:08.550Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:02:16.629Z] Stop (60457 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:02:16.630Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:03:09.223Z] Stop (60673 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:03:09.224Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:03:17.107Z] Stop (60477 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:03:17.108Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:04:09.671Z] Stop (60447 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:04:09.671Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:04:17.466Z] Stop (60358 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:04:17.467Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:05:10.056Z] Stop (60385 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:05:10.057Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:05:17.839Z] Stop (60372 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:05:17.840Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:06:10.430Z] Stop (60373 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:06:10.431Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:06:18.254Z] Stop (60414 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:06:18.255Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:07:10.812Z] Stop (60381 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:07:10.813Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:07:18.667Z] Stop (60412 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:07:18.668Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:08:11.204Z] Stop (60391 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:08:11.205Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:08:19.191Z] Stop (60523 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:08:19.192Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:09:11.623Z] Stop (60418 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:09:11.624Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:09:19.681Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:09:19.682Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:10:12.136Z] Stop (60512 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:10:12.137Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:10:20.123Z] Stop (60441 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:10:20.124Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:11:12.658Z] Stop (60521 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:11:12.659Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:11:20.560Z] Stop (60436 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:11:20.560Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:12:13.158Z] Stop (60499 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:12:13.159Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:12:20.992Z] Stop (60432 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:12:20.993Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:13:13.697Z] Stop (60538 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:13:13.698Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:13:21.478Z] Stop (60485 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:13:21.479Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:14:14.217Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:14:14.218Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:14:21.999Z] Stop (60520 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:14:22.000Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:15:14.634Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:15:14.634Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:15:22.416Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:15:22.417Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:16:15.092Z] Stop (60458 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:16:15.093Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:16:22.833Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:16:22.834Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:17:15.579Z] Stop (60486 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:17:15.580Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:17:23.354Z] Stop (60520 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:17:23.355Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:18:16.055Z] Stop (60475 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:18:16.056Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:18:23.872Z] Stop (60517 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:18:23.873Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:19:16.610Z] Stop (60554 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:19:16.611Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:19:24.362Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:19:24.363Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:20:17.104Z] Stop (60493 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:20:17.105Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:20:24.851Z] Stop (60488 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:20:24.852Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:21:17.565Z] Stop (60460 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:21:17.566Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:21:25.328Z] Stop (60476 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:21:25.329Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:22:18.074Z] Stop (60508 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:22:18.075Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:22:25.772Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:22:25.773Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:23:18.567Z] Stop (60492 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:23:18.568Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:23:26.195Z] Stop (60422 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:23:26.195Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:24:19.057Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:24:19.058Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:24:26.626Z] Stop (60431 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:24:26.626Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:25:19.516Z] Stop (60458 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:25:19.518Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:25:27.057Z] Stop (60431 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:25:27.057Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:26:19.973Z] Stop (60455 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:26:19.974Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:26:27.555Z] Stop (60498 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:26:27.556Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:27:20.431Z] Stop (60457 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:27:20.433Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:27:28.052Z] Stop (60496 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:27:28.053Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:28:20.883Z] Stop (60450 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:28:20.883Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:28:28.529Z] Stop (60476 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:28:28.530Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:29:21.369Z] Stop (60486 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:29:21.369Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:29:29.008Z] Stop (60478 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:29:29.009Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:30:21.920Z] Stop (60551 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:30:21.921Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:30:29.449Z] Stop (60440 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:30:29.449Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:31:22.409Z] Stop (60488 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:31:22.410Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:31:29.881Z] Stop (60432 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:31:29.882Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:32:22.948Z] Stop (60538 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:32:22.949Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:32:30.423Z] Stop (60541 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:32:30.424Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:33:23.392Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:33:23.393Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:33:30.940Z] Stop (60516 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:33:30.941Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:34:23.831Z] Stop (60438 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:34:23.832Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:34:31.430Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:34:31.431Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:35:24.302Z] Stop (60470 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:35:24.303Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:35:31.914Z] Stop (60483 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:35:31.915Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:36:24.742Z] Stop (60439 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:36:24.743Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:36:32.396Z] Stop (60481 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:36:32.397Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:37:25.171Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:37:25.172Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:37:32.918Z] Stop (60521 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:37:32.919Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:38:25.605Z] Stop (60433 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:38:25.606Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:38:33.352Z] Stop (60433 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:38:33.352Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:39:26.040Z] Stop (60434 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:39:26.041Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:39:33.834Z] Stop (60482 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:39:33.835Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:40:26.488Z] Stop (60447 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:40:26.489Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:40:34.263Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:40:34.264Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:41:26.945Z] Stop (60456 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:41:26.946Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:41:34.694Z] Stop (60430 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:41:34.695Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:42:27.433Z] Stop (60487 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:42:27.434Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:42:35.073Z] Stop (60378 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:42:35.074Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:43:27.841Z] Stop (60407 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:43:27.842Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:43:35.441Z] Stop (60367 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:43:35.441Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:44:28.270Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:44:28.271Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:44:35.820Z] Stop (60379 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:44:35.821Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:45:28.691Z] Stop (60420 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:45:28.692Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:45:36.188Z] Stop (60367 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:45:36.188Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:46:29.133Z] Stop (60441 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:46:29.134Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:46:36.572Z] Stop (60384 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:46:36.573Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:47:29.550Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:47:29.551Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:47:36.993Z] Stop (60420 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:47:36.994Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:48:29.952Z] Stop (60401 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:48:29.952Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:48:37.374Z] Stop (60380 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:48:37.375Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:49:30.362Z] Stop (60410 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:49:30.362Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:49:37.818Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:49:37.819Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:50:30.791Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:50:30.791Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:50:38.245Z] Stop (60426 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:50:38.246Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:51:31.240Z] Stop (60449 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:51:31.241Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:51:38.652Z] Stop (60406 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:51:38.653Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:52:31.808Z] Stop (60567 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:52:31.809Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:52:39.029Z] Stop (60376 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:52:39.029Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:53:32.191Z] Stop (60382 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:53:32.192Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:53:39.402Z] Stop (60373 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:53:39.402Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:54:32.572Z] Stop (60380 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:54:32.573Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:54:39.779Z] Stop (60377 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:54:39.780Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:55:32.963Z] Stop (60390 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:55:32.964Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:55:40.146Z] Stop (60366 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:55:40.147Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:56:33.353Z] Stop (60389 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:56:33.354Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:56:40.511Z] Stop (60364 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:56:40.511Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:57:33.731Z] Stop (60377 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:57:33.732Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:57:40.947Z] Stop (60436 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:57:40.948Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:58:34.215Z] Stop (60483 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:58:34.216Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:58:41.384Z] Stop (60436 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:58:41.385Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:59:34.679Z] Stop (60463 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:59:34.680Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T09:59:41.808Z] Stop (60423 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T09:59:41.809Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:00:35.147Z] Stop (60467 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:00:35.148Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:00:42.234Z] Stop (60425 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:00:42.235Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:01:35.646Z] Stop (60498 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:01:35.647Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:01:42.648Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:01:42.649Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:02:36.171Z] Stop (60524 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:02:36.172Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:02:43.124Z] Stop (60475 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:02:43.124Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:03:36.623Z] Stop (60451 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:03:36.624Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:03:43.552Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:03:43.553Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:04:37.025Z] Stop (60401 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:04:37.026Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:04:43.915Z] Stop (60362 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:04:43.915Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:05:37.462Z] Stop (60436 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:05:37.462Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:05:44.328Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:05:44.329Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:06:37.947Z] Stop (60485 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:06:37.947Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:06:44.691Z] Stop (60362 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:06:44.692Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:07:38.470Z] Stop (60523 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:07:38.470Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:07:45.055Z] Stop (60363 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:07:45.056Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:08:38.866Z] Stop (60396 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:08:38.867Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:08:45.424Z] Stop (60368 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:08:45.425Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:09:39.240Z] Stop (60373 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:09:39.241Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:09:45.847Z] Stop (60422 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:09:45.849Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:10:39.657Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:10:39.658Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:10:46.264Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:10:46.265Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:11:40.066Z] Stop (60408 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:11:40.067Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:11:46.635Z] Stop (60370 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:11:46.636Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:12:40.554Z] Stop (60487 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:12:40.555Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:12:47.035Z] Stop (60399 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:12:47.036Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:13:40.941Z] Stop (60386 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:13:40.942Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:13:47.449Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:13:47.450Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:14:41.338Z] Stop (60396 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:14:41.339Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:14:47.849Z] Stop (60399 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:14:47.850Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:15:41.782Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:15:41.783Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:15:48.284Z] Stop (60434 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:15:48.285Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:16:42.222Z] Stop (60439 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:16:42.223Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:16:48.806Z] Stop (60521 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:16:48.807Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:17:42.636Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:17:42.636Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:17:49.246Z] Stop (60439 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:17:49.247Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:18:43.070Z] Stop (60434 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:18:43.071Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:18:49.671Z] Stop (60424 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:18:49.671Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:19:43.509Z] Stop (60438 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:19:43.510Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:19:50.057Z] Stop (60386 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:19:50.058Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:20:43.925Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:20:43.926Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:20:50.432Z] Stop (60374 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:20:50.433Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:21:44.398Z] Stop (60472 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:21:44.399Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:21:50.850Z] Stop (60417 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:21:50.850Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:22:44.776Z] Stop (60377 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:22:44.777Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:22:51.266Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:22:51.267Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:23:45.164Z] Stop (60387 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:23:45.165Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:23:51.684Z] Stop (60417 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:23:51.685Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:24:45.589Z] Stop (60424 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:24:45.589Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:24:52.137Z] Stop (60452 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:24:52.138Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:25:46.053Z] Stop (60464 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:25:46.053Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:25:52.612Z] Stop (60474 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:25:52.613Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:26:46.496Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:26:46.497Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:26:53.103Z] Stop (60490 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:26:53.104Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:27:47.011Z] Stop (60514 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:27:47.012Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:27:53.585Z] Stop (60481 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:27:53.586Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:28:47.504Z] Stop (60492 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:28:47.505Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:28:54.054Z] Stop (60468 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:28:54.054Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:29:48.019Z] Stop (60514 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:29:48.020Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:29:54.494Z] Stop (60440 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:29:54.495Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:30:48.419Z] Stop (60399 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:30:48.420Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:30:54.908Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:30:54.910Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:31:48.832Z] Stop (60412 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:31:48.832Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:31:55.325Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:31:55.326Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:32:49.299Z] Stop (60467 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:32:49.300Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:32:55.720Z] Stop (60394 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:32:55.721Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:33:49.734Z] Stop (60434 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:33:49.735Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:33:56.125Z] Stop (60404 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:33:56.126Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:34:50.129Z] Stop (60394 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:34:50.130Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:34:56.508Z] Stop (60382 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:34:56.509Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:35:50.540Z] Stop (60410 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:35:50.540Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:35:56.891Z] Stop (60382 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:35:56.892Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:36:50.914Z] Stop (60374 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:36:50.915Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:36:57.255Z] Stop (60363 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:36:57.256Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:37:51.277Z] Stop (60362 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:37:51.277Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:37:57.622Z] Stop (60366 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:37:57.623Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:38:51.643Z] Stop (60366 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:38:51.644Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:38:58.033Z] Stop (60410 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:38:58.034Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:39:52.106Z] Stop (60462 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:39:52.106Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:39:58.376Z] Stop (60342 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:39:58.377Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:40:52.522Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:40:52.523Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:40:58.745Z] Stop (60368 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:40:58.746Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:41:52.968Z] Stop (60445 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:41:52.968Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:41:59.186Z] Stop (60440 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:41:59.187Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:42:53.454Z] Stop (60486 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:42:53.455Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:42:59.633Z] Stop (60446 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:42:59.634Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:43:53.977Z] Stop (60522 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:43:53.978Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:44:00.059Z] Stop (60425 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:44:00.059Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:44:54.426Z] Stop (60448 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:44:54.427Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:45:00.464Z] Stop (60405 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:45:00.465Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:45:54.909Z] Stop (60482 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:45:54.909Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:46:00.945Z] Stop (60480 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:46:00.945Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:46:55.338Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:46:55.339Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:47:01.414Z] Stop (60469 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:47:01.415Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:47:55.769Z] Stop (60430 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:47:55.770Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:48:01.804Z] Stop (60389 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:48:01.805Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:48:56.134Z] Stop (60364 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:48:56.134Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:49:02.208Z] Stop (60403 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:49:02.209Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:49:56.581Z] Stop (60447 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:49:56.582Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:50:02.606Z] Stop (60397 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:50:02.607Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:50:56.955Z] Stop (60373 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:50:56.956Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:51:02.989Z] Stop (60382 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:51:02.990Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:51:57.415Z] Stop (60459 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:51:57.416Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:52:03.354Z] Stop (60364 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:52:03.355Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:52:57.817Z] Stop (60401 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:52:57.818Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:53:03.723Z] Stop (60368 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:53:03.724Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:53:58.286Z] Stop (60468 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:53:58.287Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:54:04.189Z] Stop (60465 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:54:04.190Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:54:58.707Z] Stop (60420 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:54:58.707Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:55:04.638Z] Stop (60448 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:55:04.639Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:55:59.122Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:55:59.123Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:56:05.016Z] Stop (60377 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:56:05.017Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:56:59.537Z] Stop (60414 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:56:59.537Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:57:05.389Z] Stop (60372 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:57:05.390Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:57:59.900Z] Stop (60363 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:57:59.901Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:58:05.778Z] Stop (60388 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:58:05.778Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:59:00.271Z] Stop (60370 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:59:00.271Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T10:59:06.134Z] Stop (60356 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T10:59:06.134Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:00:00.700Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:00:00.701Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:00:06.559Z] Stop (60425 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:00:06.560Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:01:01.144Z] Stop (60443 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:01:01.145Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:01:07.032Z] Stop (60472 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:01:07.033Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:02:01.610Z] Stop (60465 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:02:01.610Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:02:07.508Z] Stop (60475 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:02:07.509Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:03:02.099Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:03:02.100Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:03:07.974Z] Stop (60465 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:03:07.975Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:04:02.523Z] Stop (60423 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:04:02.523Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:04:08.364Z] Stop (60389 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:04:08.365Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:05:02.889Z] Stop (60366 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:05:02.889Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:05:08.793Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:05:08.794Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:06:03.251Z] Stop (60362 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:06:03.252Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:06:09.287Z] Stop (60493 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:06:09.288Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:07:03.674Z] Stop (60422 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:07:03.675Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:07:09.716Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:07:09.717Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:08:04.088Z] Stop (60413 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:08:04.089Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:08:10.129Z] Stop (60412 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:08:10.130Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:09:04.508Z] Stop (60419 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:09:04.508Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:09:10.479Z] Stop (60349 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:09:10.479Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:10:04.856Z] Stop (60348 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:10:04.857Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:10:10.865Z] Stop (60386 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:10:10.866Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:11:05.240Z] Stop (60383 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:11:05.241Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:11:11.281Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:11:11.281Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:12:05.582Z] Stop (60341 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:12:05.583Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:12:11.698Z] Stop (60417 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:12:11.699Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:13:06.074Z] Stop (60491 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:13:06.075Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:13:12.114Z] Stop (60415 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:13:12.115Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:14:06.592Z] Stop (60517 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:14:06.593Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:14:12.531Z] Stop (60416 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:14:12.532Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:15:06.953Z] Stop (60360 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:15:06.954Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:15:12.954Z] Stop (60422 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:15:12.954Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:16:07.354Z] Stop (60400 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:16:07.354Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:16:13.565Z] Stop (60611 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:16:13.566Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:17:07.843Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:17:07.844Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:17:14.089Z] Stop (60523 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:17:14.090Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:18:08.566Z] Stop (60722 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:18:08.567Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:18:14.609Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:18:14.610Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:19:09.025Z] Stop (60458 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:19:09.026Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:19:15.065Z] Stop (60455 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:19:15.066Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:20:09.606Z] Stop (60580 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:20:09.607Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:20:15.495Z] Stop (60429 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:20:15.495Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:21:10.126Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:21:10.127Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:21:16.065Z] Stop (60570 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:21:16.066Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:22:10.566Z] Stop (60439 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:22:10.567Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:22:16.687Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:22:16.687Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:23:11.056Z] Stop (60489 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:23:11.057Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:23:17.308Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:23:17.309Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:24:11.581Z] Stop (60524 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:24:11.582Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:24:17.827Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:24:17.828Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:25:12.100Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:25:12.101Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:25:18.346Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:25:18.347Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:26:12.620Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:26:12.621Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:26:18.968Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:26:18.969Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:27:13.139Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:27:13.139Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:27:19.487Z] Stop (60518 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:27:19.487Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:28:13.658Z] Stop (60519 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:28:13.659Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:28:19.906Z] Stop (60419 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:28:19.907Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:29:14.274Z] Stop (60615 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:29:14.274Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:29:20.527Z] Stop (60620 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:29:20.528Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:30:14.718Z] Stop (60444 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:30:14.719Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:30:21.045Z] Stop (60517 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:30:21.046Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:31:15.217Z] Stop (60498 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:31:15.218Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:31:21.667Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:31:21.667Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:32:15.730Z] Stop (60512 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:32:15.731Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:32:22.187Z] Stop (60520 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:32:22.188Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:33:16.254Z] Stop (60523 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:33:16.255Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:33:22.616Z] Stop (60428 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:33:22.617Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:34:16.876Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:34:16.877Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:34:23.123Z] Stop (60506 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:34:23.124Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:35:17.336Z] Stop (60459 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:35:17.337Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:35:23.745Z] Stop (60621 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:35:23.745Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:36:17.813Z] Stop (60476 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:36:17.814Z] Start: Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T11:36:24.203Z] Stop (60458 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:36:24.204Z] Start: Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T11:37:02.512Z] Port forwarding 46334 > 40317 > 40317: Local close
+[2025-12-04T11:37:02.513Z] Port forwarding 46326 > 40317 > 40317: Local close
+[2025-12-04T11:37:02.515Z] Port forwarding connection from 51226 > 40317 > 40317 in the container.
+[2025-12-04T11:37:02.515Z] Start: Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node -e 
+[2025-12-04T11:37:02.523Z] Port forwarding 46326 > 40317 > 40317 stderr: Remote stdin close
+[2025-12-04T11:37:02.530Z] Port forwarding 46334 > 40317 > 40317 stderr: Remote stdin close
+[2025-12-04T12:36:52.975Z] Stop (14109297 ms): Run: /bin/sh 
+[2025-12-04T12:36:52.976Z] Stop (14107120 ms): Run: /bin/sh 
+[2025-12-04T12:36:52.976Z] Stop (14098484 ms): Run in container: /bin/sh
+[2025-12-04T12:36:52.976Z] Stop (14094583 ms): Run in container: /bin/sh
+[2025-12-04T12:36:52.976Z] Stop (14094540 ms): Run in container: /bin/sh
+[2025-12-04T12:36:52.976Z] Stop (14093418 ms): Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node -e 
+[2025-12-04T12:36:52.976Z] Stop (14093302 ms): Run in container: /home/dev/.vscode-server/bin/bf9252a2fb45be6893dd8870c0bf37e2e1766d61/node -e 
+[2025-12-04T12:36:52.976Z] Stop (3635162 ms): Run in container: /bin/sh -c # Watch machine settings
+[2025-12-04T12:36:52.976Z] Stop (3628772 ms): Run in container: /bin/sh -c # Watch installed extensions
+[2025-12-04T12:36:52.977Z] Container server did not launch or terminated: Error: Connection closed
+	at Socket.<anonymous> (/home/tellez/.vscode/extensions/ms-vscode-remote.remote-ssh-0.120.0/out/extension.js:2:294600)
+	at Object.onceWrapper (node:events:634:26)
+	at Socket.emit (node:events:531:35)
+	at TCP.<anonymous> (node:net:346:12)
+[2025-12-04T12:36:52.978Z] Port forwarding 46326 > 40317 > 40317 terminated with error: Connection closed
+[2025-12-04T12:36:52.978Z] Port forwarding 46334 > 40317 > 40317 terminated with error: Connection closed

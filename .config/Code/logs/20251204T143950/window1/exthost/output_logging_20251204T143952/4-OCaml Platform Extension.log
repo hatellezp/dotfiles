@@ -1,0 +1,293 @@
+external command {
+  "bin": "/home/tellez/.opam/5.4.0/bin/dune",
+  "args": [
+    "--version"
+  ]
+}
+
+external command {
+  "bin": "/home/tellez/.opam/5.4.0/bin/dune",
+  "args": [
+    "--version"
+  ]
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ]
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ]
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ]
+}
+
+external command (finished) {
+  "bin": "/home/tellez/.opam/5.4.0/bin/dune",
+  "args": [
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "3.20.2\n",
+    "stderr": ""
+  }
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "2.1.5\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ]
+}
+
+external command (finished) {
+  "bin": "/home/tellez/.opam/5.4.0/bin/dune",
+  "args": [
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "3.20.2\n",
+    "stderr": ""
+  }
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "2.1.5\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "2.1.5\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "/home/tellez/.opam\n",
+    "stderr": ""
+  }
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "/home/tellez/.opam\n",
+    "stderr": ""
+  }
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "var",
+    "--global",
+    "root"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "/home/tellez/.opam\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "switch",
+    "show",
+    "--root",
+    "/home/tellez/.opam"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "switch",
+    "show",
+    "--root",
+    "/home/tellez/.opam"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "5.4.0\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "switch",
+    "show",
+    "--root",
+    "/home/tellez/.opam"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "switch",
+    "show",
+    "--root",
+    "/home/tellez/.opam"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "5.4.0\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "exec",
+    "--switch=5.4.0",
+    "--set-switch",
+    "--root",
+    "/home/tellez/.opam",
+    "--",
+    "ocamlc",
+    "-version"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "exec",
+    "--switch=5.4.0",
+    "--set-switch",
+    "--root",
+    "/home/tellez/.opam",
+    "--",
+    "ocamlc",
+    "-version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "5.4.0\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "exec",
+    "--switch=5.4.0",
+    "--set-switch",
+    "--root",
+    "/home/tellez/.opam",
+    "--",
+    "ocamllsp",
+    "--version"
+  ]
+}
+
+external command (finished) {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "exec",
+    "--switch=5.4.0",
+    "--set-switch",
+    "--root",
+    "/home/tellez/.opam",
+    "--",
+    "ocamllsp",
+    "--version"
+  ],
+  "result": {
+    "exitCode": 0,
+    "stdout": "1.24.0\n",
+    "stderr": ""
+  }
+}
+
+external command {
+  "bin": "/usr/bin/opam",
+  "args": [
+    "exec",
+    "--switch=5.4.0",
+    "--set-switch",
+    "--root",
+    "/home/tellez/.opam",
+    "--",
+    "ocamllsp"
+  ]
+}
+

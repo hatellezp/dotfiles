@@ -1,0 +1,7 @@
+2025-12-04 14:39:58.381 [info] GitLens v17.7.1 activating in Visual Studio Code (1.106.3) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (vscode|c4c2d15b0f5cf0445369c23aaec869e1e935eda3bf3afe00c48a9e8ff5f8e3c1|6f45a88e-adee-4fa6-9bda-9b8f2858dc341764855591461)
+To enable debug logging, set `"gitlens.outputLevel": "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+[2025-12-04 13:39:58.038] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-12-04 13:39:58.039] [GIT          ] [/home/tellez] git rev-parse --show-toplevel • not a git repository (or any parent up to mount point /) • Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set). [31ms]
+

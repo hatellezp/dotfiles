@@ -1,0 +1,84 @@
+
+
+% This is a simple sample document.  For more complicated documents take a look in the exercise tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+
+\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+
+\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
+
+\title{Latent Space Translation} % Sets article title
+\author{Horacio Tellez} % Sets authors name
+\date{\today} % Sets date for date compiled
+
+% The preamble ends with the command \begin{document}
+\begin{document} % All begin commands must be paired with an end command somewhere
+    \maketitle % creates title using information in preamble (title, author, date)
+
+
+\section{Problem}
+This is about closing the gap between real and simulated data using a latent 
+space as means of the translation. This should be seen as a three
+step:
+\begin{enumerate}
+    \item Go into the latent space with a \emph{simulated signal}, this
+        defines a \emph{latent simulated signal}; 
+    \item Go from the \emph{latent simulated signal} to a \emph{real simulated signal};
+    \item Go from the \emph{real simulated signal} to a \emph{real signal}.
+\end{enumerate}
+
+We have implicitly assumed defined (at least three objects):
+\begin{itemize}
+    \item A map from the signal space to the latent space (call it the encoder $E$);
+    \item A map from the latent space into itself (the actual translation between simulated and real data,
+        let's call it the translator $M$);
+    \item A map from the latent space to the signal space (call it the decoder $D$).
+\end{itemize}
+
+\section{Encoder-Decoder}
+A good way to solve the auto-encoder problem in this case is a \emph{variational auto-encoder} (VAE). This will
+create a encoder-decoder pair that is aware of the importance of features and where its latent space shares some
+form of continuity with the signal space.
+
+\textbf{How to train a VAE}
+This is only dependent of the data, no need to be aware of type of data, simulated or real. Even if conditioning 
+is possible, better to test first without.
+
+For the actual method of training, the literature for VAE is very vast.
+
+\section{Translator}
+
+The translator is the complex part of this setting.
+
+Let $Y = (f_1, \dots, f_n, d)$ be an real signal, where $f_1, \dots, f_n$ are \emph{known} an \emph{informative} features as
+\begin{itemize}
+    \item type of object: cylinder, sphere, mine, shoe, rock, fish, \ldots
+    \item physical characteristics (if it applies): radius, length, height, width, solid or not \ldots
+    \item spatial situation: seabed, in the soil, in free space, \ldots,
+    \item \ldots 
+\end{itemize}
+and $d$ is the actual signal.
+What is mapped to the latent space is only the signal: $d_l = E(d)$. Now suppose that for such a signal $Y$ we
+can simulate a signal $X$ with not necessarily the same features, but the same signal: $X = (f'_1, \dots, f'_n, d')$.
+That is, it could be the case that we know, by means of research, observation or expertise, that simulating a signal
+with features $f'_1, \dots, f'_n$ with output the signal $d'$ that is, by a chosen measure: distance in the signal space, distance in the
+frequency space or other more appropriate method, the nearer to $d$.
+
+Now for all real signals for which this is possible we create pairs $(X, Y)$ where $X$ is the simulated signal and
+$Y$ is its closer simulated neighbor in the signal space. The translator model is train to simply map $d_l$ to $d'_l$.
+This can be done with several methods and models, for same dimension output (which is the case here, $X$ and $Y$
+living in the same space) diffusion models function very well.
+
+\section{Steps}
+\begin{itemize}
+    \item Gather enough diverse data to train the VAE: real data and possibly data coming from other datasets;
+    \item Train the VAE;
+    \item For each real signal $Y = (f_1, \dots, f_n, d)$, for which is possible, find its nearer simulated signal
+        neighbor $X = (f'_1, \dots, f'_n, d')$;
+    \item Create pairs $(X, Y)$ in the signal space and its counterparts $(d_l, d'_l)$ in the latent space;
+    \item Train the translator $M$ to map $d_l$ to $d'_l$.
+\end{itemize}
+
+After the process above is ended we should have a trustworthy (in the sense we can measure its quality) signal generator.
+For a simulated signal $d'$ we defined its real (generated) counterpart as $d := D(M(E(d')))$.
+
+\end{document} % This is the end of the document

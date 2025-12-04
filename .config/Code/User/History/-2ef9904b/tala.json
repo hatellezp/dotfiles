@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "search.showLineNumbers": true,
+    "zenMode.hideLineNumbers": false,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "remote.autoForwardPortsSource": "hybrid"
+}

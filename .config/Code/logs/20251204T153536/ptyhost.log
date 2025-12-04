@@ -1,0 +1,1 @@
+2025-12-04 15:35:41.622 [error] Failed to set sticky bit on /tmp/tellez-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/tellez-code-zsh'

@@ -1,0 +1,19 @@
+2025-12-04 14:40:14.233 [info] Client: Command pylance.registerNotebookStartupCommands is already registered.
+2025-12-04 14:40:14.743 [info] Client: Pylance client (2025.10.3) started with python extension (2025.18.0)
+2025-12-04 14:40:15.380 [info] (53530): Server root directory: file:///home/tellez/.vscode/extensions/ms-python.vscode-pylance-2025.10.3/dist
+2025-12-04 14:40:15.381 [info] (53530): Pylance language server 2025.10.3 (pyright version 1.1.407, commit 906e40aa) starting
+2025-12-04 14:40:15.390 [info] (53530): Starting service instance "i3" for workspace "/home/tellez/dotfiles/.config/i3"
+2025-12-04 14:40:16.158 [info] (53530): Loading background bundle file:///home/tellez/.vscode/extensions/ms-python.vscode-pylance-2025.10.3/dist/copilot-background.bundle.js into file:///home/tellez/dotfiles/.config/i3...
+2025-12-04 14:40:16.262 [info] (53530): FG(i3): Setting environmentName for service "i3": "3.12.3 (global)"
+2025-12-04 14:40:16.263 [info] (53530): FG(i3): Setting pythonPath for service "i3": "/usr/bin/python3"
+2025-12-04 14:40:16.263 [info] (53530): FG(i3): No include entries specified; assuming /home/tellez/dotfiles/.config/i3
+2025-12-04 14:40:16.263 [info] (53530): FG(i3): Auto-excluding **/node_modules
+2025-12-04 14:40:16.264 [info] (53530): FG(i3): Auto-excluding **/__pycache__
+2025-12-04 14:40:16.264 [info] (53530): FG(i3): Auto-excluding **/.*
+2025-12-04 14:40:16.288 [info] (53530): FG(i3): Assuming Python version 3.12.3.final.0
+2025-12-04 14:40:16.351 [info] (53530): Settings have not changed. Skipping update.
+2025-12-04 14:40:16.353 [info] (53530): Starting Mcp server id:5122 ...
+2025-12-04 14:40:16.364 [info] (53530): FG(i3): No source files found.
+2025-12-04 14:40:16.782 [info] (53530): PQ(i3): Priority queue background worker(2) root directory: file:///home/tellez/.vscode/extensions/ms-python.vscode-pylance-2025.10.3/dist
+2025-12-04 14:40:16.784 [info] (53530): PQ(i3): Priority queue background worker(2) started
+2025-12-04 14:40:17.091 [info] (53530): BG(i3): Loaded external background bundle file:///home/tellez/.vscode/extensions/ms-python.vscode-pylance-2025.10.3/dist/copilot-background.bundle.js. 

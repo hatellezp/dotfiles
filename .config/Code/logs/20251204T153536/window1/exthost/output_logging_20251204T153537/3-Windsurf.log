@@ -1,0 +1,58 @@
+(VSCode) 2025-12-04 15:35:40.721 [INFO]: No proxy settings found
+(VSCode) 2025-12-04 15:35:41.878 [INFO]: Checking network connection...
+(VSCode) 2025-12-04 15:35:42.588 [INFO]: No Network Issue connecting to https://server.codeium.com/healthz
+(VSCode) 2025-12-04 15:35:42.913 [INFO]: Creating manager directory: /tmp/35d3e19a-90df-4010-b411-9f8ac8c9f3fc/codeium/manager
+(VSCode) 2025-12-04 15:35:43.381 [INFO]: Using cached LS with valid crc32: /home/tellez/.vscode/extensions/codeium.codeium-1.48.2/dist/e03af6ebc40b844314d448f947c80b636d093049/language_server_linux_x64
+(VSCode) 2025-12-04 15:35:43.391 [INFO]: Language server started
+2025/12/04 15:35:43 maxprocs: Leaving GOMAXPROCS=12: CPU quota undefined
+I1204 15:35:43.587610  6393 main.go:604] [Language Server Manager] Setting GOMAXPROCS to 4
+I1204 15:35:43.587688  6393 main.go:750] [Language Server Manager] Release 1.48.2 (e03af6ebc40b844314d448f947c80b636d093049)
+I1204 15:35:43.587714  6393 main.go:829] [Language Server Manager] Starting language server manager with pid 6393
+I1204 15:35:43.587844  6393 main.go:138] [Language Server Manager] Manager acquired its lock file /tmp/35d3e19a-90df-4010-b411-9f8ac8c9f3fc/codeium/manager/locks/manager.lock
+I1204 15:35:43.588482  6393 main.go:283] [Language Server Manager] Waiting for random port file in /tmp/35d3e19a-90df-4010-b411-9f8ac8c9f3fc/codeium/manager/child_random_port_1764858943587906415_2930211113240919566 to be created
+2025/12/04 15:35:43 maxprocs: Leaving GOMAXPROCS=12: CPU quota undefined
+I1204 15:35:43.771564  6410 main.go:604] Setting GOMAXPROCS to 4
+I1204 15:35:43.771926  6410 main.go:823] Starting language server process with pid 6410
+I1204 15:35:43.771957  6410 server.go:296] Language server will attempt to listen on host 127.0.0.1
+I1204 15:35:43.772081  6410 server.go:303] Language server listening on random port at 42225
+I1204 15:35:44.569656  6410 web_server.go:256] Chat Web Server listening at ws://127.0.0.1:37883
+I1204 15:35:44.786431  6410 server.go:955] Local search is enabled, will index local files.
+I1204 15:35:44.786450  6410 server.go:959] Using 3 indexer workers
+I1204 15:35:45.080053  6410 server.go:1196] Child process attempting to acquire lock file /tmp/35d3e19a-90df-4010-b411-9f8ac8c9f3fc/codeium/manager/locks/child_lock_1764858943587962711_5349095493046622700
+I1204 15:35:45.080096  6410 server.go:1204] Child process acquired lock file /tmp/35d3e19a-90df-4010-b411-9f8ac8c9f3fc/codeium/manager/locks/child_lock_1764858943587962711_5349095493046622700
+36711
+I1204 15:35:45.096280  6393 main.go:319] [Language Server Manager] Found random server port 42225
+I1204 15:35:45.096341  6393 main.go:320] [Language Server Manager] Found random lsp port 36711
+I1204 15:35:45.096354  6393 main.go:327] [Language Server Manager] Attempting to connect to language server at 127.0.0.1:42225
+I1204 15:35:45.107689  6393 main.go:192] [Language Server Manager] Fixing language server port at 42225
+I1204 15:35:45.107712  6393 main.go:381] [Language Server Manager] Successfully connected to new language server at 127.0.0.1:42225
+(VSCode) 2025-12-04 15:35:45.203 [INFO]: Found language server running on port 42225
+(VSCode) 2025-12-04 15:35:45.307 [INFO]: openAllTextDocuments took 5.087605000000622ms
+BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+(VSCode) 2025-12-04 15:35:45.653 [ERROR]: Invalid LSP port: BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+
+BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+(VSCode) 2025-12-04 15:35:45.653 [ERROR]: Invalid LSP port: BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+BEWARE: your OS is not officially supported by Playwright; downloading fallback build for ubuntu24.04-x64.
+
+(VSCode) 2025-12-04 15:35:49.111 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:49.655 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:49.940 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:50.245 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:50.945 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:51.351 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:53.442 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:53.992 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:54.951 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:57.315 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:57.372 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:57.577 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.180 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.268 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.360 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.435 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.680 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:58.879 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:59.007 [INFO]: Windsurf is not enabled for the current document.
+(VSCode) 2025-12-04 15:35:59.192 [INFO]: Windsurf is not enabled for the current document.

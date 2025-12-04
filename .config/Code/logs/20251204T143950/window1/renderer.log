@@ -1,0 +1,41 @@
+2025-12-04 14:39:51.763 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-12-04 14:39:52.057 [info] Started local extension host with pid 50951.
+2025-12-04 14:39:52.589 [error] Cannot read properties of null (reading '$ref'): TypeError: Cannot read properties of null (reading '$ref')
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:25963)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+2025-12-04 14:39:52.890 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: njk
+2025-12-04 14:39:52.890 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: django-html
+2025-12-04 14:39:53.116 [error] Error: Unable to read file '/home/tellez/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/package.json' (Error: Unable to resolve nonexistent file '/home/tellez/.vscode/extensions/ms-python.black-formatter-2024.0.1/bundled/package.json')
+    at Kkt.G (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3828:65903)
+    at Kkt.F (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3828:65728)
+    at async Kkt.C (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3828:65095)
+    at async uPe.t (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:23699)
+    at async uPe.scanExtension (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:22201)
+    at async Promise.all (index 0)
+    at async uPe.q (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:20624)
+    at async uPe.scanOneOrMultipleExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:22028)
+    at async gIt.scanOneOrMultipleExtensions (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:14395)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3838:14602
+2025-12-04 14:39:53.612 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-04 14:39:53.841 [error] [Extension Host] (node:50951) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-04 14:39:53.844 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-04 14:39:53.906 [error] [Extension Host] (node:50951) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-12-04 14:39:55.816 [error] chatParticipant must be declared in package.json: claude-code
+2025-12-04 14:39:56.186 [info] [perf] Render performance baseline is 154ms
+2025-12-04 14:39:58.504 [error] CodeExpectedError: No default agent registered
+    at pct.activateDefaultAgent (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2183:13445)
+2025-12-04 14:39:58.740 [warning] Authentication provider codeium_auth was not declared in the Extension Manifest.
+2025-12-04 14:39:59.339 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 14:40:00.177 [error] Error providing chat sessions: Canceled
+2025-12-04 14:40:00.177 [error] Error fetching chat session options Canceled
+2025-12-04 14:40:00.177 [error] Error providing chat sessions: Canceled
+2025-12-04 14:40:00.178 [error] Error providing chat sessions: Canceled

@@ -1,0 +1,34 @@
+2025-12-04 15:35:37.093 [info] Started local extension host with pid 5737.
+2025-12-04 15:35:37.791 [error] Cannot read properties of null (reading '$ref'): TypeError: Cannot read properties of null (reading '$ref')
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:25963)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26084
+    at Array.forEach (<anonymous>)
+    at UMe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3015:26019)
+2025-12-04 15:35:38.400 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: njk
+2025-12-04 15:35:38.400 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: django-html
+2025-12-04 15:35:38.524 [info] MCP Registry configured: https://api.mcp.github.com
+2025-12-04 15:35:38.637 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-12-04 15:35:38.849 [error] [Extension Host] (node:5737) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)
+2025-12-04 15:35:38.850 [error] [Extension Host] (node:5737) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-12-04 15:35:39.847 [info] [perf] Render performance baseline is 22ms
+2025-12-04 15:35:40.928 [error] chatParticipant must be declared in package.json: claude-code
+2025-12-04 15:35:41.884 [warning] Authentication provider codeium_auth was not declared in the Extension Manifest.
+2025-12-04 15:35:42.403 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:43.823 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:44.883 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:45.951 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:50.121 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:51.258 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:52.373 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:54.461 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:55.957 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:58.332 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:35:59.366 [error] An unknown error occurred. Please consult the log for more details.
+2025-12-04 15:36:05.214 [error] An unknown error occurred. Please consult the log for more details.

@@ -1,0 +1,5 @@
+2025-12-04 14:39:58.381 [info] [2025-12-04 13:39:58.039] [         31ms] [/home/tellez] git rev-parse --show-toplevel • FAILED
+2025-12-04 14:39:58.381 [info] 
+Error: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+

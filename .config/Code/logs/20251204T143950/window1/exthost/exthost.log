@@ -1,0 +1,125 @@
+2025-12-04 14:39:52.580 [info] Extension host with pid 50951 started
+2025-12-04 14:39:52.580 [info] Skipping acquiring lock for /home/tellez/.config/Code/User/workspaceStorage/11dec45544abb300880d6b9c5cec1b02.
+2025-12-04 14:39:52.821 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-12-04 14:39:52.847 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-12-04 14:39:52.852 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-12-04 14:39:52.866 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-12-04 14:39:53.921 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-12-04 14:39:53.931 [info] ExtensionService#_doActivateExtension mtxr.sqltools, startup: true, activationEvent: '*'
+2025-12-04 14:39:53.999 [info] ExtensionService#_doActivateExtension wayou.vscode-todo-highlight, startup: true, activationEvent: '*'
+2025-12-04 14:39:54.025 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:.conda'
+2025-12-04 14:39:54.318 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-12-04 14:39:54.733 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-12-04 14:39:54.881 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-04 14:39:55.174 [info] ExtensionService#_doActivateExtension ms-vscode.makefile-tools, startup: true, activationEvent: 'workspaceContains:**/makefile,**/Makefile,**/GNUmakefile'
+2025-12-04 14:39:55.369 [info] ExtensionService#_doActivateExtension ocamllabs.ocaml-platform, startup: true, activationEvent: 'workspaceContains:**/dune-workspace,**/dune,**/dune-project,**/*.opam,**/*.ml,**/*.mli,**/*.mll,**/*.mly,**/*.mlx,**/*.re,**/*.rei'
+2025-12-04 14:39:55.726 [error] Error: chatParticipant must be declared in package.json: claude-code
+    at QKt.$registerAgent (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:511:6057)
+2025-12-04 14:39:56.014 [info] Eager extensions activated
+2025-12-04 14:39:56.196 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.199 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.224 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.230 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc-icons, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.361 [info] ExtensionService#_doActivateExtension Codeium.codeium, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.842 [info] ExtensionService#_doActivateExtension cweijan.vscode-office, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:56.989 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.143 [info] ExtensionService#_doActivateExtension modular-mojotools.vscode-mojo, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.207 [info] ExtensionService#_doActivateExtension monokai.theme-monokai-pro-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.209 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.328 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.415 [info] ExtensionService#_doActivateExtension SeyyedKhandon.firacode, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.417 [info] ExtensionService#_doActivateExtension streetsidesoftware.code-spell-checker, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.489 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:57.906 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-12-04 14:39:58.173 [info] ExtensionService#_doActivateExtension streetsidesoftware.code-spell-checker-french, startup: false, activationEvent: 'onStartupFinished'
+2025-12-04 14:39:58.174 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-12-04 14:39:58.181 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-12-04 14:39:58.228 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-12-04 14:39:58.869 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2025-12-04 14:39:59.338 [error] Error: GitHubLoginFailed
+	at FG._authShowWarnings (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:32474)
+	at async FG.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:30347)
+	at async LV.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:26751)
+	at async vj.updateCachedToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:1914:35986)
+2025-12-04 14:39:59.565 [error] Error: GitHubLoginFailed
+	at FG._authShowWarnings (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:32474)
+	at async FG.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:4043:30347)
+	at async LV.getCopilotToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:963:26751)
+	at async vj.updateCachedToken (/home/tellez/.vscode/extensions/github.copilot-chat-0.33.4/dist/extension.js:1914:35986)
+2025-12-04 14:39:59.963 [info] ExtensionService#_doActivateExtension ms-python.vscode-python-envs, startup: false, activationEvent: 'api', root cause: ms-python.vscode-pylance
+2025-12-04 14:40:00.185 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2776
+2025-12-04 14:40:00.201 [info] Extension host terminating: renderer closed the MessagePort
+2025-12-04 14:40:00.235 [error] An error occurred when disposing the subscriptions for extension 'eamodio.gitlens':
+2025-12-04 14:40:00.238 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+	at Object.dispose (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:132328)
+	at Aw.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24779)
+	at Aw.dispose (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24875)
+	at Object.dispose (/home/tellez/.vscode/extensions/eamodio.gitlens-17.7.1/dist/gitlens.js:15:28696)
+	at /home/tellez/.vscode/extensions/eamodio.gitlens-17.7.1/dist/gitlens.js:292:18273
+	at Array.forEach (<anonymous>)
+	at Object.dispose (/home/tellez/.vscode/extensions/eamodio.gitlens-17.7.1/dist/gitlens.js:292:18255)
+	at Gi (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+	at VR.b (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15172)
+	at VR.dispose (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1227)
+	at kX.eb (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:12045)
+	at file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10000
+	at Array.map (<anonymous>)
+	at kX.$ (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9988)
+	at kX.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10231)
+	at nN.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+	at Fs (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:10411)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:6949)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:489:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-12-04 14:40:00.264 [error] An error occurred when deactivating the extension 'SeyyedKhandon.firacode':
+2025-12-04 14:40:00.264 [error] TypeError: Cannot read properties of undefined (reading 'extension')
+	at deactivateFiraCode (/home/tellez/.vscode/extensions/seyyedkhandon.firacode-2.2.2/out/util.js:53:27)
+	at Object.deactivate (/home/tellez/.vscode/extensions/seyyedkhandon.firacode-2.2.2/out/extension.js:25:35)
+	at kX.eb (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11850)
+	at file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10000
+	at Array.map (<anonymous>)
+	at kX.$ (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9988)
+	at kX.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10231)
+	at nN.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+	at Fs (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:10411)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:6949)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:489:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-12-04 14:40:00.268 [error] Error: Channel has been closed
+	at s (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:2431)
+	at Object.appendLine (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:2570)
+	at LogChannel.log (/home/tellez/.vscode/extensions/modular-mojotools.vscode-mojo-26.0.2/out/extension.js:60571:24)
+	at LogChannel.info (/home/tellez/.vscode/extensions/modular-mojotools.vscode-mojo-26.0.2/out/extension.js:60524:10)
+	at Logger.info (/home/tellez/.vscode/extensions/modular-mojotools.vscode-mojo-26.0.2/out/extension.js:60608:15)
+	at Server.<anonymous> (/home/tellez/.vscode/extensions/modular-mojotools.vscode-mojo-26.0.2/out/extension.js:62506:23)
+	at Object.onceWrapper (node:events:633:28)
+	at Server.emit (node:events:519:28)
+	at Server.emit (node:domain:489:12)
+	at emitCloseNT (node:net:2419:8)
+	at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2025-12-04 14:40:00.270 [error] TypeError: Cannot read properties of undefined (reading 'subscriptions')
+	at Object.G [as deactivate] (/home/tellez/.vscode/extensions/ms-python.vscode-python-envs-1.12.0-linux-x64/dist/extension.js:2:681672)
+	at kX.eb (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11850)
+	at file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10000
+	at Array.map (<anonymous>)
+	at kX.$ (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9988)
+	at kX.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10231)
+	at nN.terminate (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+	at Fs (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:10411)
+	at MessagePortMain.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:6949)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:489:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-12-04 14:40:00.339 [error] ProxyResolver#resolveProxy DIRECT Canceled: Canceled
+	at new ij (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120021)
+	at JS.U (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:124631)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:122125)
+	at My.resolveProxy (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:76517)
+	at Object.resolveProxy (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:212:23219)
+	at useProxySettings (/usr/share/code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:208:16)
+	at /usr/share/code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:145:13
+	at /usr/share/code/resources/app/node_modules/@vscode/proxy-agent/out/index.js:791:13
+	at process.processTicksAndRejections (node:internal/process/task_queues:105:5) 
+2025-12-04 14:40:00.359 [info] Extension host with pid 50951 exiting with code 0
