@@ -33,11 +33,11 @@ command=~/.config/i3blocks/audio_sink.sh
 interval=2
 label=
 
-# [backlight]
-# label=BL
-# command=~/.config/i3blocks/i3blocks-brightness
-# interval=once
-# signal=10
+[backlight]
+label=BL
+command=~/.config/i3blocks/i3blocks-brightness
+interval=once
+signal=10
 
 # Volume indicator
 #
