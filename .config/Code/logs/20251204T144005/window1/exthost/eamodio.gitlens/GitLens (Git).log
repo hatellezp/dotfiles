@@ -1,4 +1,0 @@
-2025-12-04 14:42:19.453 [info] [2025-12-04 13:42:19.448] [         11ms] [/home/tellez/dotfiles] git for-each-ref --format=%1E%(refname)%1D%(objectname)%1D%(*objectname)%1D%(creatordate:iso8601)%1D%(authordate:iso8601)%1D%(subject)%1D refs/tags/ • FAILED
-2025-12-04 14:42:19.453 [info] 
-Canceled: Operation cancelled; command=/usr/bin/git -c core.quotepath=false -c color.ui=false for-each-ref --format=%1E%(refname)%1D%(objectname)%1D%(*objectname)%1D%(creatordate:iso8601)%1D%(authordate:iso8601)%1D%(subject)%1D refs/tags/
-

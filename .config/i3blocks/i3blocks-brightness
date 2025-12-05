@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Simple brightness block for i3blocks using brightnessctl
+
+current=$(brightnessctl get)
+max=$(brightnessctl max)
+
+if [ -z "$current" ] || [ -z "$max" ] || [ "$max" -eq 0 ]; then
+    echo "N/A"
+    exit 0
+fi
+
+percent=$(( 100 * current / max ))
+echo "${percent}%"
+

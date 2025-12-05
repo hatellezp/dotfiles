@@ -1,5 +1,0 @@
-2025-12-04 12:03:32.048 [info] Client: Command pylance.registerNotebookStartupCommands is already registered.
-2025-12-04 12:03:32.569 [info] Client: Pylance client (2025.10.3) started with python extension (2025.18.0)
-2025-12-04 12:03:33.203 [info] (21232): Server root directory: file:///home/tellez/.vscode/extensions/ms-python.vscode-pylance-2025.10.3/dist
-2025-12-04 12:03:33.205 [info] (21232): Pylance language server 2025.10.3 (pyright version 1.1.407, commit 906e40aa) starting
-2025-12-04 12:03:34.204 [info] (21232): Starting Mcp server id:3459 ...

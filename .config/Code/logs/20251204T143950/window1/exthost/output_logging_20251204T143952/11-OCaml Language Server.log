@@ -1,4 +1,0 @@
-[Warn  - 14:39:58] failed to poll dune registry.
-Unix.Unix_error(Unix.ENOENT, "stat", "/run/user/1000/dune/rpc")
-Maybe you are not running dune in watch mode?
-Hint: $ dune build -w
