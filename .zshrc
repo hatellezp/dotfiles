@@ -164,7 +164,7 @@ export LD_LIBRARY_PATH=/home/tellez/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
 export PATH="$PATH:/home/tellez/.modular/bin"
 export PATH="$PATH:/home/tellez/.local/bin"
-
+export PATH=$PATH:/usr/local/go/bin
 
 
 export PATH="$PATH:$HOME/zig/current_inst"
@@ -177,3 +177,15 @@ export PATH="$PATH:$HOME/zig/current_inst"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/tellez/.opam/opam-init/init.zsh' ]] || source '/home/tellez/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+#
+#
+export MULTITOOL_API_KEY='EMPTY'
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/tellez/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

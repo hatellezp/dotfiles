@@ -64,7 +64,7 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 
 # does not work in wayland
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # exec $mod+Escape exec loginctl lock-session
 bindsym $mod+Escape exec i3lock
 
@@ -315,6 +315,7 @@ bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/monitor-menu.sh
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+b exec firefox
 bindsym $mod+c exec code
+bindsym $mod+Shift+x exec --no-startup-id ~/.config/i3/vpn-toggle.sh && $refresh_i3blocks
 
 
 

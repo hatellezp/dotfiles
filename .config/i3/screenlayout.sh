@@ -11,7 +11,7 @@ MON27_CANDIDATES=("DP-0.6" "DP-1.6")
 MON24_CANDIDATES=("DP-0.5" "DP-1.5")
 
 # 42" monitor (assume stable, adjust if needed)
-MON42_CANDIDATES=("DP-3")
+MON42_CANDIDATES=("DP-0.3" "DP-1.3")
 # =====================================================
 
 set -e
@@ -36,7 +36,9 @@ detect_output() {
 # At runtime, resolve which actual outputs to use
 MON27="$(detect_output "${MON27_CANDIDATES[@]}" || true)"
 MON24="$(detect_output "${MON24_CANDIDATES[@]}" || true)"
-MON42="$(detect_output "${MON42_CANDIDATES[@]}" || true)"
+# MON42="$(detect_output "${MON42_CANDIDATES[@]}" || true)"
+# quick fix
+MON42="HDMI-0"
 
 show_status() {
     echo "Connected outputs:"
@@ -77,7 +79,7 @@ profile_triple() {
     done
 
     xrandr \
-      --output "$MON27" --auto --primary \
+      --output "$MON27" --scale 1.0x1.0 --auto --primary \
       --output "$LAPTOP" --auto --left-of "$MON27" \
       --output "$MON24" --auto --right-of "$MON27" \
       ${MON42:+--output "$MON42" --off}
@@ -102,7 +104,7 @@ profile_tv() {
     done
 
     xrandr \
-      --output "$MON42" --auto --primary \
+      --output "$MON42" --auto --primary  \
       --output "$LAPTOP" --auto --left-of "$MON42" \
       ${MON27:+--output "$MON27" --off} \
       ${MON24:+--output "$MON24" --off}

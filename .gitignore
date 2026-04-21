@@ -3,3 +3,14 @@ push_to_git.sh
 \<
 keyring.deb
 .config/Code
+.config/Cursor
+.config/JetBrains
+.config/Logseq
+.config/obsidian
+.config/kde*
+.config/libreoffice
+.config/vlc
+applications
+.config/zed
+.config/go
+.config/google-chrome

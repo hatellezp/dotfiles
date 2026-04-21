@@ -9,6 +9,7 @@ application/x-extension-shtml=userapp-Firefox-47PME3.desktop
 application/xhtml+xml=userapp-Firefox-47PME3.desktop
 application/x-extension-xhtml=userapp-Firefox-47PME3.desktop
 application/x-extension-xht=userapp-Firefox-47PME3.desktop
+x-scheme-handler/obsidian=md.obsidian.Obsidian.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-47PME3.desktop;
