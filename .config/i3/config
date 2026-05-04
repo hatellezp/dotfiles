@@ -317,8 +317,9 @@ bindsym $mod+b exec firefox
 bindsym $mod+c exec code
 bindsym $mod+Shift+x exec --no-startup-id ~/.config/i3/vpn-toggle.sh && $refresh_i3blocks
 
-
-
+# save and restory layouts
+bindsym $mod+Shift+u exec --no-startup-id ~/.local/bin/i3-ws-layout save
+bindsym $mod+Shift+i exec --no-startup-id ~/.local/bin/i3-ws-layout restore
 
 # pop ups:
 for_window [window_role="pop-up"] floating enable
